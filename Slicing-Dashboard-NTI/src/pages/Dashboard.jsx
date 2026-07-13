@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Hero from '../components/Dashboard/Hero/Hero';
 
 const Dashboard = () => {
     return (
@@ -11,12 +12,9 @@ const Dashboard = () => {
             <Navbar />
             
             {/* Chart Section */}
-            <div>
-                <div>
-
-                </div>
-                <div>
-
+            <div className='ml-14 mt-3 bg-white p-1.5 rounded-2xl'>
+                <div className='m-2 bg-slate-100 p-2 rounded-xl'>
+                    <Hero/>
                 </div>
             </div>
 
