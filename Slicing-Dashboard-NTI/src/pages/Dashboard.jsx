@@ -12,8 +12,8 @@ const Dashboard = () => {
             <Navbar />
             
             {/* Chart Section */}
-            <div className='ml-14 mt-3 bg-white p-1.5 rounded-2xl'>
-                <div className='m-2 bg-slate-100 p-2 rounded-xl'>
+            <div className='ml-14 mt-3 bg-white py-1.5 pl-1.5 rounded-l-2xl'>
+                <div className='my-2 ml-2 bg-slate-100 p-2 rounded-xl border border-slate-200'>
                     <Hero/>
                 </div>
             </div>

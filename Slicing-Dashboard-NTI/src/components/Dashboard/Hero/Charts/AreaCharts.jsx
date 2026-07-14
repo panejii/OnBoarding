@@ -98,7 +98,7 @@ const AreaChart = ({ data }) => {
     <ReactECharts
       option={option}
       style={{
-        height: 300,
+        height: "100%",
         width: "100%",
       }}
     />

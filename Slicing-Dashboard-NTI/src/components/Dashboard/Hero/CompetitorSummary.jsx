@@ -8,16 +8,16 @@ const CompetitorSummary = ({ item }) => {
         className="w-8 h-8 mx-auto mb-2"
       />
 
-      <p className="text-xs text-gray-500">
+      <p className="text-[8px] font-semibold/loose text-gray-500">
         {item.provider}
       </p>
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-m font-semibold">
         {item.percentage}%
       </h2>
 
       <p
-        className={`text-sm font-semibold ${
+        className={`text-xs font-semibold ${
           item.color === "green"
             ? "text-green-500"
             : "text-red-500"
