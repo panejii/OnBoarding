@@ -1,6 +1,10 @@
+import iconXl from '../assets/LogoXL.png'
+import iconIndosat from '../assets/LogoIndosat.png'
+
 export const competitorSummary = [
   {
     id: 1,
+    logo:iconIndosat,
     provider: "FMC Indosat",
     percentage: 18.51,
     value: "2.3M",
@@ -9,6 +13,7 @@ export const competitorSummary = [
   },
   {
     id: 2,
+    logo:iconXl,
     provider: "FMC XL Axiata",
     percentage: 54.54,
     value: "1.2M",
@@ -16,6 +21,7 @@ export const competitorSummary = [
     color: "red",
   },
 ];
+
 
 export const competitorData = [
     {

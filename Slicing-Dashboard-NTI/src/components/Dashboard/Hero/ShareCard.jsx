@@ -1,5 +1,7 @@
-import React from 'react'
 import ShareColumn from './ShareColumn'
+
+import {mbbData} from '../../../data/mbbData'
+import { fbbData } from '../../../data/fbbData'
 
 const ShareCard = () => {
   return (
@@ -19,13 +21,21 @@ const ShareCard = () => {
         {/* MBB */}
 
         <div>
-          <ShareColumn/>
+          <ShareColumn
+            title="MBB Share"
+            color="purple"
+            data= {mbbData}
+          />
         </div>
 
         {/* FBB */}
 
         <div>
-          <ShareColumn/>
+          <ShareColumn
+            title="FBB Share"
+            color="blue"
+            data= {fbbData}
+          />
         </div>
 
       </div>

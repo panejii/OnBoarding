@@ -1,35 +1,30 @@
-export const mbbShare = [
+import iconTelkomsel from "../assets/iconTelkomsel.png";
+import logoIndosat from "../assets/logoIndosat.png";
+import logoXL from "../assets/logoXL.png";
 
-{
-    id:1,
-
-    provider:"Telkomsel",
-
-    percentage:32.53,
-
-    growth:-6.4,
-
-    trend:[35,34,31,29,32,28,25],
-
-    featured:true,
-
-    color: "#DC2626",
-},
-
-{
-    id:2,
-
-    provider:"Indosat",
-
-    percentage:31.21,
-
-    growth:-6.4,
-
-    description:"we are 2.3M ahead",
-
-    trend:[32,29,31,27,30,26,23],
-
-    color: "#22C55E",
-},
-
+export const mbbData = [
+  {
+    id: 1,
+    provider: "Telkomsel",
+    logo: iconTelkomsel,
+    percentage: 32.53,
+    growth: -6.4,
+    sparkline: [28, 24, 20, 25, 18, 15],
+  },
+  {
+    id: 2,
+    provider: "Indosat",
+    logo: logoIndosat,
+    percentage: 31.21,
+    growth: 6.4,
+    sparkline: [18, 20, 24, 22, 25, 28],
+  },
+  {
+    id: 3,
+    provider: "XL Axiata",
+    logo: logoXL,
+    percentage: 31.21,
+    growth: 6.4,
+    sparkline: [15, 19, 22, 21, 24, 27],
+  },
 ];

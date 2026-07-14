@@ -5,11 +5,11 @@ import { User, UserRound, UsersRound } from 'lucide-react';
 
 const StatisticCard = () => {
   return (
-    <div className="rounded-2xl bg-white p-5 shadow-sm h-full">
+    <div className="flex flex-col rounded-2xl bg-white p-5 shadow-sm h-full">
 
       <div className="flex gap-3 items-center">
         <img src={iconTelkomsel} alt="icon Telkomsel" className="w-8 h-8 border border-zinc-200 rounded-xl" />
-        <div>
+        <div> 
           <h2 className="font-semibold text-xs">
             Total Test FMC
           </h2>
@@ -20,7 +20,7 @@ const StatisticCard = () => {
         </div>
       </div>
       
-      <div className="h-[220px]">
+      <div className="h-55 mt-3">
         <AreaChart data={areaChartData}/>
       </div>
       

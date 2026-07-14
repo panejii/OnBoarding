@@ -1,3 +1,5 @@
+
+
 const CompetitorSummary = ({ item }) => {
   return (
     <div className="rounded-xl border border-gray-100 p-4 text-center">

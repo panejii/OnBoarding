@@ -12,7 +12,7 @@ const Hero = () => {
             <StatisticCard />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 ">
             <CompetitorCard />
         </div>
 
