@@ -23,7 +23,7 @@ const Dashboard = () => {
 
                 {/* Second Section */}
 
-                <div className='my-2 ml-2 bg-slate-100 p-2 rounded-xl border border-slate-200'>
+                <div className='my-2 ml-2 bg-slate-100  rounded-xl border border-slate-200'>
                     <SecondSection/>
                 </div>
             </div>

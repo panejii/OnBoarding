@@ -1,24 +1,43 @@
 import MigrationSection from './MigrationSection/MigrationSection'
 import RegionalSection from './RegionalSection/RegionalSection'
 import MapSection from './map/MapSection'
+import Header from './Header'
 
 const SecondSection = () => {
   return (
-    <div className='grid grid-cols-12 mt-12'>
-        <div className='col-span-5'>
-            <MigrationSection/>
+
+    <div >
+
+        <div>
+            <Header/>
         </div>
-        <div className='col-span-7 grid grid-cols-7'>
-            
-            <div className='col-span-3'>
-                <RegionalSection/>
-            </div>
-            <div className='col-span-4'>
-                <MapSection/>
+
+        <div className='grid grid-cols-12 mt-6 px-2'>
+            <div className='col-span-4 '>
+                <MigrationSection/>
             </div>
             
+            <div className='col-span-8 grid grid-cols-7 bg-white border border-slate-200 rounded-2xl p-3'>
+
+                <div className='col-span-7 flex justify-between'>
+                    <h1 className='text-2xl font-semibold px-3 py-3'>Evaluating Regional</h1>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                <div className='col-span-3'>
+                    <RegionalSection/>
+                </div>
+                <div className='col-span-4'>
+                    <MapSection/>
+                </div>
+            
+
+            </div>
         </div>
     </div>
+    
   )
 }
 

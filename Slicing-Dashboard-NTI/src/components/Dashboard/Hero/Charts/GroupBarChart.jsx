@@ -5,7 +5,7 @@ const GroupBarChart = ({ data }) => {
   const option = {
 
     tooltip: {
-      trigger: "axis",
+      trigger: "item",
       axisPointer: {
         type: "shadow",
       },

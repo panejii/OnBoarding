@@ -15,8 +15,8 @@ const ShareColumn = ({ title, color, data }) => {
       <div
         className={`text-center text-white font-semibold py-2 ${
           color === "purple"
-            ? "bg-gradient-to-r from-fuchsia-500 to-violet-500"
-            : "bg-gradient-to-r from-blue-500 to-indigo-500"
+            ? "bg-linear-to-r from-fuchsia-500 to-violet-500"
+            : "bg-linear-to-r from-blue-500 to-indigo-500"
         }`}
       >
         {title}

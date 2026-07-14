@@ -10,7 +10,7 @@ export default function Map(){
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapRef.current,
-            center: [78,21], 
+            center: [106.8516,-6.2297], 
             zoom : 9
         })
         return () => map.remove()
