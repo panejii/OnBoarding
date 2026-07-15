@@ -15,7 +15,7 @@ const SankeyChart = ({ data }) => {
 
         layout: "none",
 
-        nodeGap: 20,
+        nodeGap: 70,
 
         nodeWidth: 3,  
 
@@ -59,7 +59,7 @@ const SankeyChart = ({ data }) => {
       option={option}
       style={{
         width: "100%",
-        height: "120px",
+        height: "100%",
       }}
     />
   );

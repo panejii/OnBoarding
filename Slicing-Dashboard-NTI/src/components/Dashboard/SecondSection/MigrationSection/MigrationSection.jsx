@@ -36,7 +36,7 @@ const MigrationSection = () => {
             <h2 className='text-zinc-400 text-[8px]'>Total FMC Sale</h2>
             <h2 className='text-zinc-400 text-[8px]'>Outcoming Sample</h2>
         </div>
-        <div className=''>
+        <div className='h-full'>
             <SankeyChart
                 data={migration}
             />
