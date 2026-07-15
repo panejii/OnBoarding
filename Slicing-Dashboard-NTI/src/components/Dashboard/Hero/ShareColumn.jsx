@@ -9,7 +9,7 @@ const ShareColumn = ({ title, color, data }) => {
 });
   
     return (
-    <div className="flex-1 rounded-2xl border border-gray-200 overflow-hidden">
+    <div className="h-full rounded-2xl border border-gray-200 overflow-hidden flex flex-col">
 
       {/* Header */}
       <div
@@ -23,7 +23,7 @@ const ShareColumn = ({ title, color, data }) => {
       </div>
 
       {/* List */}
-      <div className="flex flex-col gap-3 p-1">
+      <div className="flex-1 flex flex-col gap-3 p-1 justify-between`">
         {data.map((item) => (
           <ShareItem
             key={item.id}

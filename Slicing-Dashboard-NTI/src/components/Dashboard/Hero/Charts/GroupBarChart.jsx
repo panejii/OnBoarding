@@ -13,10 +13,10 @@ const GroupBarChart = ({ data }) => {
 
     legend: {
       bottom: 0,
-      itemWidth: 10,
-      itemHeight: 10,
+      itemWidth: 7,
+      itemHeight: 7,
       textStyle: {
-        fontSize: 10,
+        fontSize: 7,
       },
     },
 
@@ -45,7 +45,7 @@ const GroupBarChart = ({ data }) => {
 
       axisLabel: {
         color: "#6B7280",
-        fontSize: 10,
+        fontSize: 7,
       },
     },
 
@@ -59,7 +59,7 @@ const GroupBarChart = ({ data }) => {
       },
 
       axisLabel: {
-        fontSize: 10,
+        fontSize: 7,
       },
     },
 

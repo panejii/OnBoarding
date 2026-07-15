@@ -43,12 +43,12 @@ const StatisticCard = () => {
         <AreaChart data={chartData}/>
       </div>
       
-      <div className="flex items-center gap-3 mt-3">
+      <div className="flex items-center gap-3 mt-3 p-2 bg-slate-100 rounded-2xl border-slate-300">
         <div className="border border-zinc-500 rounded-2xl">
-            <UserRound/>
+            <UserRound size={12}/>
         </div>
         <div>
-          <p className="text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nihil!</p>
+          <p className="text-xs">Growth Potential: 8.2M FBB-Only and 145.2M MBB-Only users available for FMC</p>
         </div>
       </div>
 

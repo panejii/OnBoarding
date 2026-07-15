@@ -29,13 +29,13 @@ const CompetitorCard = () => {
     },[]) 
 
   return (
-    <div className="bg-white rounded-2xl p-5 shadow-sm h-full">
+    <div className="bg-white rounded-2xl p-2 shadow-sm h-full">
 
-      <h2 className="text-xs font-semibold text-center mb-2">
+      <h2 className="text-xs font-semibold text-center my-2">
         Gap with Competitor
       </h2>
 
-      <div className="grid grid-cols-2 gap-3 mb-5">
+      <div className="grid grid-cols-2 gap-3 mb-2">
 
         {competitorSummaryData.map((item) => (
           <CompetitorSummary
