@@ -2,52 +2,52 @@ import iconTelkomsel from '../../../../assets/iconTelkomsel.png'
 
 const MobileBroadCard = () => {
   return (
-    <div className="bg-white rounded-2xl p-4 mt-3">
+    <div className="bg-white rounded-2xl p-2 mt-1">
 
-      <div className="flex items-center gap-2 mb-5">
-        <img src={iconTelkomsel} alt="icon Telkomsel" className='w-6 h-6' />
+      <div className="flex items-center gap-2 mb-2">
+        <img src={iconTelkomsel} alt="icon Telkomsel" className='w-3 h-3' />
 
-        <h2 className="font-semibold">
+        <h2 className="font-semibold text-sm">
           Mobile Broadband
         </h2>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-1">
 
-        <div>
-          <p className="text-xs text-gray-500">RSRP</p>
-          <h2 className="text-2xl font-bold mt-1">32.12%</h2>
-          <p className="text-xs text-green-500 mt-1">↓ 6.4%</p>
+        <div className='gap-0.5'>
+          <p className="text-[8px] text-gray-500">RSRP</p>
+          <h2 className="text-xs font-bold ">32.12%</h2>
+          <p className="text-[8px] text-green-500 ">↓ 6.4%</p>
         </div>
 
-        <div>
-          <p className="text-xs text-gray-500">RSRQ</p>
-          <h2 className="text-2xl font-bold mt-1">22.88%</h2>
-          <p className="text-xs text-red-500 mt-1">↑ 6.4%</p>
+        <div className='gap-0.5'>
+          <p className="text-[8px] text-gray-500">RSRQ</p>
+          <h2 className="text-xs font-bold ">22.88%</h2>
+          <p className="text-[8px] text-red-500 ">↑ 6.4%</p>
         </div>
 
-        <div >
-          <p className="text-xs text-gray-500">Cell Congestion</p>
-          <h2 className="text-2xl font-bold mt-1">45%</h2>
-          <p className="text-xs text-green-500 mt-1">↓ 6.4%</p>
+        <div className='gap-0.5'>
+          <p className="text-[8px] text-gray-500">Cell Congestion</p>
+          <h2 className="text-xs font-bold ">45%</h2>
+          <p className="text-[8px] text-green-500 ">↓ 6.4%</p>
         </div>
 
       </div>
 
-      <div className="mt-5 bg-gray-50 rounded-xl ">
+      <div className="mt-2 bg-gray-50 rounded-xl ">
 
-        <div className="flex justify-between border border-gray-200 p-3 rounded-2xl">
+        <div className="flex justify-between border border-gray-200 p-2 rounded-2xl">
 
           <div >
-            <p className="text-xs text-gray-500">
+            <p className="text-[8px] text-gray-500">
               Impacted grid with issue
             </p>
 
-            <h3 className="font-bold text-xl">
+            <h3 className="font-bold text-xs">
               31.25k
             </h3>
 
-            <p className="text-xs text-gray-500">
+            <p className="text-[8px] text-gray-500">
               from
               <span className="text-blue-500 font-semibold">
                 {" "}32.53k grid
@@ -58,11 +58,11 @@ const MobileBroadCard = () => {
 
           <div className="text-right">
 
-            <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">
+            <span className="bg-blue-600 text-white px-2 py-1 rounded-full text-[8px]">
               32.32%
             </span>
 
-            <p className="text-green-500 text-xs mt-2">
+            <p className="text-green-500 text-[8px] mt-2">
               ↓ 6.4%
             </p>
 
