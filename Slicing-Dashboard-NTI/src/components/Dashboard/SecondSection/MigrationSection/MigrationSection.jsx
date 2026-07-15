@@ -25,15 +25,15 @@ const MigrationSection = () => {
     
   return (
     <div className='bg-white mr-2 rounded-2xl border border-slate-200 h-full flex flex-col'>
-        <div className='p-6'>
-            <h1 className='text-2xl font-semibold'>User Migration</h1>
+        <div className='p-3'>
+            <h1 className='text-xs font-semibold'>User Migration</h1>
         </div>
-        <div className='flex items-center justify-center gap-32 border border-slate-200 py-6'>
-            <h2 className='text-zinc-400 text-xs'>Incoming Sample</h2>
-            <h2 className='text-zinc-400 text-xs'>Total FMC Sale</h2>
-            <h2 className='text-zinc-400 text-xs'>Outcoming Sample</h2>
+        <div className='flex items-center justify-center gap-16 border border-slate-200 py-3'>
+            <h2 className='text-zinc-400 text-[8px]'>Incoming Sample</h2>
+            <h2 className='text-zinc-400 text-[8px]'>Total FMC Sale</h2>
+            <h2 className='text-zinc-400 text-[8px]'>Outcoming Sample</h2>
         </div>
-        <div className='flex-1'>
+        <div className=''>
             <SankeyChart
                 data={migration}
             />

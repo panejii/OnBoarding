@@ -1,73 +1,73 @@
-{
-  "nodes": [
-    {
-      "name": "Indosat"
-    },
-    {
-      "name": "XL Axiata"
-    },
-    {
-      "name": "XL Home"
-    },
-    {
-      "name": "HiFi"
-    },
-    {
-      "name": "FMC"
-    },
-    {
-      "name": "Indosat Out"
-    },
-    {
-      "name": "XL Axiata Out"
-    },
-    {
-      "name": "XL Home Out"
-    },
-    {
-      "name": "HiFi Out"
-    }
-  ],
-  "links": [
-    {
-      "source": "Indosat",
-      "target": "FMC",
-      "value": 307
-    },
-    {
-      "source": "XL Axiata",
-      "target": "FMC",
-      "value": 292
-    },
-    {
-      "source": "XL Home",
-      "target": "FMC",
-      "value": 894
-    },
-    {
-      "source": "HiFi",
-      "target": "FMC",
-      "value": 1054
-    },
-    {
-      "source": "FMC",
-      "target": "Indosat Out",
-      "value": 282
-    },
-    {
-      "source": "FMC",
-      "target": "XL Axiata Out",
-      "value": 241
-    },
-    {
-      "source": "FMC",
-      "target": "XL Home Out",
-      "value": 1011
-    },
-    {
-      "source": "FMC",
-      "target": "HiFi Out",
-      "value": 1114
-    }
-  ]
-}
+  {
+    "nodes": [
+      {
+        "name": "Indosat"
+      },
+      {
+        "name": "XL Axiata"
+      },
+      {
+        "name": "XL Home"
+      },
+      {
+        "name": "HiFi"
+      },
+      {
+        "name": "FMC"
+      },
+      {
+        "name": "Indosat Out"
+      },
+      {
+        "name": "XL Axiata Out"
+      },
+      {
+        "name": "XL Home Out"
+      },
+      {
+        "name": "HiFi Out"
+      }
+    ],
+    "links": [
+      {
+        "source": "Indosat",
+        "target": "FMC",
+        "value": 307
+      },
+      {
+        "source": "XL Axiata",
+        "target": "FMC",
+        "value": 292
+      },
+      {
+        "source": "XL Home",
+        "target": "FMC",
+        "value": 894
+      },
+      {
+        "source": "HiFi",
+        "target": "FMC",
+        "value": 1054
+      },
+      {
+        "source": "FMC",
+        "target": "Indosat Out",
+        "value": 282
+      },
+      {
+        "source": "FMC",
+        "target": "XL Axiata Out",
+        "value": 241
+      },
+      {
+        "source": "FMC",
+        "target": "XL Home Out",
+        "value": 1011
+      },
+      {
+        "source": "FMC",
+        "target": "HiFi Out",
+        "value": 1114
+      }
+    ]
+  }

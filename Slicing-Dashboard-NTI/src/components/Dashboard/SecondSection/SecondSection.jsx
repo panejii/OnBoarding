@@ -12,7 +12,7 @@ const SecondSection = () => {
             <Header/>
         </div>
 
-        <div className='grid grid-cols-12 mt-6 px-2 items-stretch'>
+        <div className='grid grid-cols-12 mt-3 px-2 items-stretch'>
             <div className='col-span-4 h-full'>
                 <MigrationSection/>
             </div>

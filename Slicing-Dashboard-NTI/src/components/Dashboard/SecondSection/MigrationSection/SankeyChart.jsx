@@ -12,17 +12,30 @@ const SankeyChart = ({ data }) => {
 
         layout: "none",
 
-        nodeGap: 25,
+        nodeGap: 20,
 
-        nodeWidth: 10,
+        nodeWidth: 3,  
 
         emphasis: {
           focus: "adjacency",
         },
 
-        data: data.nodes,
+        // data: data.nodes,
 
-        links: data.links,
+        // links: data.links,
+
+        data: data.nodes.map((n, i) => ({
+          ...n,
+          x: n.side === "left" ? 0.05 : n.side === "right" ? 0.95 : 0.5,
+          y: n.y, // atur manual per posisi vertikal, jaraknya kamu tentukan sendiri
+        })),
+        links: data.links.map((l) => ({
+          ...l,
+          value: 1, // paksa semua link "setebal" yang sama
+        })),
+        label: {
+          formatter: (p) => `${p.name}\n${originalValueMap[p.name]}`,
+        },
 
         lineStyle: {
           color: "gradient",
@@ -32,7 +45,7 @@ const SankeyChart = ({ data }) => {
 
         label: {
           color: "#374151",
-          fontSize: 12,
+          fontSize: 8,
         },
       },
     ],
@@ -43,7 +56,7 @@ const SankeyChart = ({ data }) => {
       option={option}
       style={{
         width: "100%",
-        height: "100%",
+        height: "120px",
       }}
     />
   );
