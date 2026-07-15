@@ -1,6 +1,9 @@
 import ReactECharts from "echarts-for-react";
 
 const SankeyChart = ({ data }) => {
+
+  console.log(data)
+
   const option = {
     tooltip: {
       trigger: "item",

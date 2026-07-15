@@ -8,7 +8,10 @@ import {UserRound} from 'lucide-react'
 
 const MigrationSection = () => {
 
-    const [migration, setMigrationData] = useState([])
+    const [migration, setMigrationData] = useState({
+      nodes: [],
+      links: []
+    })
 
     useEffect(() => {
         async function loadChart() {
