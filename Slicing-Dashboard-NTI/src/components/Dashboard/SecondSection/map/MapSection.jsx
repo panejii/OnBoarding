@@ -1,21 +1,24 @@
 import Mapbox from "./Mapbox";
+import MapLegend from "./mapLegend";
+import ZoomControl from "./ZoomControl";
+import PopupInfo from "./PopupInfo";
+import BottomPanel from "./BottomPanel";
 
 const MapSection = () => {
   return (
     <div className="bg-white rounded-2xl p-4 shadow-sm h-full flex flex-col">
 
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="font-semibold text-lg">
-          Regional Map
-        </h2>
-
-        <select className="border rounded-lg px-2 py-1 text-sm">
-          <option>Indonesia</option>
-        </select>
-      </div>
-
-      <div className="flex-1">
+      
+      <div className="relative flex-1 overflow-hidden rounded-xl">
         <Mapbox />
+
+        <MapLegend/>
+
+        <ZoomControl/>
+
+        <PopupInfo/>
+
+        <BottomPanel/>
       </div>
 
     </div>

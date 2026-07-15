@@ -14,7 +14,7 @@ const SankeyChart = ({ data }) => {
 
         nodeGap: 25,
 
-        nodeWidth: 18,
+        nodeWidth: 10,
 
         emphasis: {
           focus: "adjacency",
@@ -43,7 +43,7 @@ const SankeyChart = ({ data }) => {
       option={option}
       style={{
         width: "100%",
-        height: "500px",
+        height: "100%",
       }}
     />
   );

@@ -13,9 +13,6 @@
       "name": "HiFi"
     },
     {
-      "name": "Other"
-    },
-    {
       "name": "FMC"
     },
     {
@@ -29,9 +26,6 @@
     },
     {
       "name": "HiFi Out"
-    },
-    {
-      "name": "Other Out"
     }
   ],
   "links": [

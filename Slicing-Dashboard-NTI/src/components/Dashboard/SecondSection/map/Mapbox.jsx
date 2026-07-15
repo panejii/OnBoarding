@@ -16,5 +16,5 @@ export default function Map(){
         return () => map.remove()
     },[])
 
-    return <div ref={mapRef} style={{width:"100%",height:"420px"}}/>
+    return <div ref={mapRef} style={{width:"100%",height:"100%"}}/>
 };
