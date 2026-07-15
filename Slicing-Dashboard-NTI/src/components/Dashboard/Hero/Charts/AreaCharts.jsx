@@ -8,10 +8,10 @@ const AreaChart = ({ data }) => {
     },
 
     grid: {
-      left: 10,
-      right: 10,
-      top: 10,
-      bottom: 10,
+      left: 5,
+      right: 5,
+      top: 5,
+      bottom: 5,
       containLabel: true,
     },
 
@@ -61,10 +61,10 @@ const AreaChart = ({ data }) => {
 
         symbol: "circle",
 
-        symbolSize: 8,
+        symbolSize: 5,
 
         lineStyle: {
-          width: 3,
+          width: 2,
           color: "#2563EB",
         },
 

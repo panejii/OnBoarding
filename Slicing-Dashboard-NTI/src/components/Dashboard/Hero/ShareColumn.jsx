@@ -13,7 +13,7 @@ const ShareColumn = ({ title, color, data }) => {
 
       {/* Header */}
       <div
-        className={`text-center text-white font-semibold py-2 ${
+        className={`text-center text-white font-semibold py-0.5 text-[8px] ${
           color === "purple"
             ? "bg-linear-to-r from-fuchsia-500 to-violet-500"
             : "bg-linear-to-r from-blue-500 to-indigo-500"
@@ -23,7 +23,7 @@ const ShareColumn = ({ title, color, data }) => {
       </div>
 
       {/* List */}
-      <div className="flex flex-col gap-3 p-3">
+      <div className="flex flex-col gap-3 p-1">
         {data.map((item) => (
           <ShareItem
             key={item.id}

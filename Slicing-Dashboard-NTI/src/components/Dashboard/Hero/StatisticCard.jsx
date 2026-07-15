@@ -24,7 +24,7 @@ const StatisticCard = () => {
 
 
   return (
-    <div className="flex flex-col rounded-2xl bg-white p-5 shadow-sm h-full">
+    <div className="flex flex-col rounded-2xl bg-white p-2 shadow-sm h-full">
 
       <div className="flex gap-3 items-center">
         <img src={iconTelkomsel} alt="icon Telkomsel" className="w-8 h-8 border border-zinc-200 rounded-xl" />
@@ -33,7 +33,7 @@ const StatisticCard = () => {
             Total Test FMC
           </h2>
 
-          <h1 className="text-lg font-bold">
+          <h1 className="text-lg font-semibold">
             45.20%
           </h1>
         </div>

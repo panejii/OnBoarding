@@ -4,11 +4,16 @@ import ShareCard from "./ShareCard";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-12 gap-3">
+    <section className="
+    grid 
+    grid-cols-12 
+    gap-1
+    
+    xl:grid-cols-6">
 
-      <div className="col-span-7 flex bg-white rounded-2xl p-2 gap-2">
+      <div className="col-span-8 xl:col-span-4 flex rounded-2xl my-2 ml-2 gap-2 bg-white">
 
-        <div className="flex-2">
+        <div className="flex-2 ">
             <StatisticCard />
         </div>
 
@@ -18,7 +23,7 @@ const Hero = () => {
 
     </div>
 
-      <div className="col-span-5">
+      <div className="col-span-4 xl:col-span-2 m-2">
           <ShareCard />
       </div>
 

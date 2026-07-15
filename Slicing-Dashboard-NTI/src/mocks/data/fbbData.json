@@ -2,7 +2,7 @@
   {
     "id": 1,
     "provider": "IndiHome",
-    "logo": "logoIndihome.png",
+    "logo": "indihome",
     "percentage": 44.82,
     "growth": 5.2,
     "sparkline": [30, 32, 35, 37, 39, 42]
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "provider": "XL Home",
-    "logo": "logoXLHome.png",
+    "logo": "xlhome",
     "percentage": 27.34,
     "growth": 2.8,
     "sparkline": [18, 20, 21, 23, 24, 27]
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "provider": "Biznet",
-    "logo": "logoBiznet.png",
+    "logo": "biznet",
     "percentage": 18.45,
     "growth": -3.1,
     "sparkline": [26, 24, 23, 22, 20, 18]

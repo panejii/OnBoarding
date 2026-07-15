@@ -31,7 +31,7 @@ const CompetitorCard = () => {
   return (
     <div className="bg-white rounded-2xl p-5 shadow-sm h-full">
 
-      <h2 className="text-xl font-semibold text-center mb-2">
+      <h2 className="text-xs font-semibold text-center mb-2">
         Gap with Competitor
       </h2>
 
@@ -46,7 +46,7 @@ const CompetitorCard = () => {
 
       </div>
       
-      <div className="w-full h-60">
+      <div className="w-full h-40">
         <GroupBarChart data={competitorData} />
       </div>
       
