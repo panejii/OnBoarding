@@ -1,9 +1,32 @@
+import { useState,useEffect } from 'react'
 import ShareColumn from './ShareColumn'
 
-import {mbbData} from '../../../data/mbbData'
-import { fbbData } from '../../../data/fbbData'
+import { getMbbData } from '../../../services/mbbService'
+import { getFbbData } from '../../../services/fbbService'
 
 const ShareCard = () => {
+
+  const [fbbData, setFbbData] = useState([]);
+  const [mbbData, setMbbData] = useState([]);
+
+  useEffect (() => {
+    async function loadData(){
+      try{
+        const[mbb,fbb] = await Promise.all([
+          getMbbData(),
+          getFbbData(),
+        ])
+
+        setFbbData(fbb)
+        setMbbData(mbb)
+      } catch(error){
+        console.error(error)
+      }
+    }
+
+    loadData()
+  },[]) 
+
   return (
     <div className='gap-3 bg-white h-full p-3 rounded-2xl'>
       

@@ -1,12 +1,33 @@
 import CompetitorSummary from "./CompetitorSummary";
 import GroupBarChart from "./Charts/GroupBarChart";
 
-import {
-  competitorSummary,
-  competitorData,
-} from "../../../data/competitorData";
+import { useState,useEffect } from "react";
+
+import { getCompetitor,getCompetitorSummary } from "../../../services/competitorService";
 
 const CompetitorCard = () => {
+
+  const [competitorData, setcompetitorData] = useState([]);
+    const [competitorSummaryData, setcompetitorSummaryData] = useState([]);
+  
+    useEffect (() => {
+      async function loadData(){
+        try{
+          const[compData,compSumData] = await Promise.all([
+            getCompetitorSummary(),
+            getCompetitor(),
+          ])
+  
+          setcompetitorData(compSumData)
+          setcompetitorSummaryData(compData)
+        } catch(error){
+          console.error(error)
+        }
+      }
+  
+      loadData()
+    },[]) 
+
   return (
     <div className="bg-white rounded-2xl p-5 shadow-sm h-full">
 
@@ -16,7 +37,7 @@ const CompetitorCard = () => {
 
       <div className="grid grid-cols-2 gap-3 mb-5">
 
-        {competitorSummary.map((item) => (
+        {competitorSummaryData.map((item) => (
           <CompetitorSummary
             key={item.id}
             item={item}

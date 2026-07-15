@@ -2,7 +2,7 @@ import Mapbox from "./Mapbox";
 
 const MapSection = () => {
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm h-full">
+    <div className="bg-white rounded-2xl p-4 shadow-sm h-full flex flex-col">
 
       <div className="flex justify-between items-center mb-4">
         <h2 className="font-semibold text-lg">
@@ -14,7 +14,7 @@ const MapSection = () => {
         </select>
       </div>
 
-      <div className="h-105">
+      <div className="flex-1">
         <Mapbox />
       </div>
 

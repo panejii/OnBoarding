@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "logo": "LogoIndosat.png",
+    "provider": "FMC Indosat",
+    "percentage": 18.51,
+    "value": "2.3M",
+    "status": "ahead",
+    "color": "green"
+  },
+  {
+    "id": 2,
+    "logo": "LogoXL.png",
+    "provider": "FMC XL Axiata",
+    "percentage": 54.54,
+    "value": "1.2M",
+    "status": "behind",
+    "color": "red"
+  }
+]

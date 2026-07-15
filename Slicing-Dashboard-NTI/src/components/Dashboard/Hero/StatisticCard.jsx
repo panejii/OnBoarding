@@ -1,9 +1,28 @@
+import { useState,useEffect } from "react";
 import AreaChart from "../Hero/Charts/AreaCharts";
-import { areaChartData } from "../../../data/areaChartData";
 import iconTelkomsel from "../../../assets/iconTelkomsel.png"
 import { User, UserRound, UsersRound } from 'lucide-react';
 
+import { getAreaChart } from "../../../services/areaChartService";
+
 const StatisticCard = () => {
+  
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    async function loadChart() {
+      try {
+        const data = await getAreaChart();
+        setChartData(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    loadChart();
+  }, []);
+
+
   return (
     <div className="flex flex-col rounded-2xl bg-white p-5 shadow-sm h-full">
 
@@ -21,7 +40,7 @@ const StatisticCard = () => {
       </div>
       
       <div className="h-55 mt-3">
-        <AreaChart data={areaChartData}/>
+        <AreaChart data={chartData}/>
       </div>
       
       <div className="flex items-center gap-3 mt-3">
