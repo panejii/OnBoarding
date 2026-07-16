@@ -6,7 +6,7 @@ import BottomPanel from "./BottomPanel";
 
 const MapSection = () => {
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm h-full flex flex-col">
+    <div className="bg-white rounded-2xl ml-3 shadow-sm h-full flex flex-col">
 
       
       <div className="relative flex-1 overflow-hidden rounded-xl">

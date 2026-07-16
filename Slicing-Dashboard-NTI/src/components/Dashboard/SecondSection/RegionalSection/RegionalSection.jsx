@@ -26,7 +26,7 @@ const RegionalSection = () => {
 
   return (
     <div  className='h-full flex flex-col gap-3'>
-        <div className='grid grid-cols-5 bg-slate-50 mx-2 p-2 rounded-2xl border border-slate-200 items-center'>
+        <div className='grid grid-cols-5 bg-slate-50 mx-2 p-2 rounded-2xl border border-slate-200 items-center gap-1'>
             <div className='col-span-2'>
                 <ChurnCard/>
             </div>

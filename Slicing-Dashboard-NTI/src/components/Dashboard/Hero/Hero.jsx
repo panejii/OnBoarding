@@ -4,7 +4,7 @@ import ShareCard from "./ShareCard";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-12 gap-1 lg:gap-2 xl:gap-3 2xl:gap-4  ">
+    <section className="grid grid-cols-12  ">
 
       <div className="col-span-8 flex rounded-2xl my-2 2xl:my-3 ml-2 2xl:ml-3 gap-2 bg-white">
 

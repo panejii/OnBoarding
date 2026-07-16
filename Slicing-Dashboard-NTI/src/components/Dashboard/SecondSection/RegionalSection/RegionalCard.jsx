@@ -19,16 +19,16 @@ const RegionalCard = ({ data }) => {
           {/* Kiri */}
           <div>
 
-            <p className="text-[8px] text-gray-500">
+            <p className="text-[5px] lg:text-[7px] xl:text-[9px] 2xl:text-[12px] text-gray-500">
               {data.title}
             </p>
 
-            <div className="flex items-center gap-1 justify-center">
-                <h2 className="text-xs font-bold mt-1">
+            <div className="flex items-center gap-1">
+                <h2 className="text-[8px] xl:text-[10px] 2xl:text-[12px] font-bold ">
                     {data.percentage}%
                 </h2>
 
-                <p className="text-[7px] text-gray-400">
+                <p className="text-[5px] xl:text-[8px] 2xl:text-[10px] text-gray-400">
                     ({data.users} user)
                 </p>
             </div>
@@ -40,18 +40,18 @@ const RegionalCard = ({ data }) => {
           <div className="text-right">
 
             <div className="flex items-center gap-1">
-                <h2 className="text-xs font-semibold">
+                <h2 className="text-[8px] xl:text-[10px] 2xl:text-[12px] font-semibold">
                     {data.totalGrid}
                 </h2>
 
-                <p className="text-gray-500 text-[10px]">
+                <p className="text-gray-500 text-[8px] xl:text-[10px] 2xl:text-[12px]">
                     grid
                 </p>
             </div>
 
 
 
-            <p className="text-[8px] text-gray-400">
+            <p className="text-[6px] xl:text-[10px] 2xl:text-[12px] text-gray-400">
               ({data.totalPercent}% of total)
             </p>
 

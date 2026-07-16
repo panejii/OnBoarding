@@ -2,9 +2,9 @@ const PayloadCard = () => {
   return (
     <div className="grid grid-cols-2 gap-3 ">
 
-      <div className="bg-white rounded-2xl border border-gray-200 p-4">
+      <div className="bg-white rounded-2xl border border-gray-200 p-3">
 
-        <h3 className="text-gray-500 text-[10px] mb-2">
+        <h3 className="text-gray-500 text-[6px] lg:text-[8px] xl:text-[10px] mb-2">
           Payload Crowdsource
         </h3>
 
@@ -44,7 +44,7 @@ const PayloadCard = () => {
 
       <div className="bg-white rounded-2xl border border-gray-200 p-4">
 
-        <h3 className="text-gray-500 text-[10px] mb-2">
+        <h3 className="text-gray-500 text-[6px] lg:text-[8px] xl:text-[10px] mb-2">
           Payload OSS
         </h3>
 
