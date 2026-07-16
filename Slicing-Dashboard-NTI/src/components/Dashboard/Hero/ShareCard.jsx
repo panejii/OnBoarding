@@ -31,8 +31,8 @@
       <div className='gap-1 bg-white h-full p-2 rounded-2xl flex flex-col'>
         
         <div className='flex justify-between items-center mt-2'>
-          <h1 className='text-[12px] font-semibold'>FBB&MBB Share</h1>
-          <select className='bg-slate-100 rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300 text-[8px]'>
+          <h1 className='text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold'>FBB&MBB Share</h1>
+          <select className='bg-slate-100 rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300 text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs'>
             <option value="">Meta</option>
             <option value="">Non-Meta</option>
           </select>

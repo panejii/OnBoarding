@@ -13,7 +13,7 @@ const ShareColumn = ({ title, color, data }) => {
 
       {/* Header */}
       <div
-        className={`text-center text-white font-semibold py-0.5 text-[8px] ${
+        className={`text-center text-white font-semibold py-0.5 lg:py-1 xl:py-1.5 2xl:py-2 text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs  ${
           color === "purple"
             ? "bg-linear-to-r from-fuchsia-500 to-violet-500"
             : "bg-linear-to-r from-blue-500 to-indigo-500"

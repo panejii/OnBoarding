@@ -31,11 +31,11 @@ const CompetitorCard = () => {
   return (
     <div className="bg-white rounded-2xl p-2 shadow-sm h-full">
 
-      <h2 className="text-xs font-semibold text-center my-2">
+      <h2 className="text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold text-center my-2">
         Gap with Competitor
       </h2>
 
-      <div className="grid grid-cols-2 gap-3 mb-2">
+      <div className="grid grid-cols-2 mb-2">
 
         {competitorSummaryData.map((item) => (
           <CompetitorSummary
@@ -46,7 +46,7 @@ const CompetitorCard = () => {
 
       </div>
       
-      <div className="w-full h-40">
+      <div className="w-full h-42 lg:h-46 xl:h-54 2xl:h-62">
         <GroupBarChart data={competitorData} />
       </div>
       

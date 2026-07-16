@@ -48,7 +48,7 @@ const RegionalSection = () => {
             <MobileBroadCard/>
         </div>
         
-        <div className="">
+        <div className="px-2">
             <PayloadCard/>
         </div>
     </div>

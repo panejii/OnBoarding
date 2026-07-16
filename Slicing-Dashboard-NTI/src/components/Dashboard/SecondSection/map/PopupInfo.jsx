@@ -56,9 +56,9 @@ const PopupInfo = () => {
                     <Gauge size={9} color='gray' />
                     <MoveDown size={7} color='red' className='ml-0.5'/>
                     6.4 Mbps
-                    <p className='text-gray-500 text-[8px] ml-0.5'>
+                    <span className='text-gray-500 text-[8px] ml-0.5'>
                         (2%)
-                    </p>
+                    </span>
                 </p>
             </div>
         </div>
