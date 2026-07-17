@@ -26,12 +26,12 @@ export const handlers = [
   }),
 
   http.get("/api/competitorData", async () => {
-    await delay(2000);
+    await delay(2250);
     return HttpResponse.json(competitorData);
   }),
 
   http.get("/api/competitorSummaryData", async () => {
-    await delay(2000);
+    await delay(2500);
     return HttpResponse.json(competitorSummary);
   }),
 
