@@ -16,12 +16,12 @@ export const handlers = [
   }),
 
   http.get("/api/fbb-data", async () => {
-    await delay(2000);
+    await delay(1500);
     return HttpResponse.json(fbbData);
   }),
 
   http.get("/api/mbb-data", async () => {
-    await delay(2000);
+    await delay(2260);
     return HttpResponse.json(mbbData);
   }),
 
