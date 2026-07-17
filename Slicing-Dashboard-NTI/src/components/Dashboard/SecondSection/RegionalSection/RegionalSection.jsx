@@ -7,10 +7,12 @@ import RegionalCard from "./RegionalCard"
 import PayloadCard from "./PayloadCard"
 
 import { getRegionalData } from "../../../../services/regionalService"
+import { AnimatedCard, SkeletonList } from "../../../../animation"
 
 const RegionalSection = () => {
 
     const [regionalData, setRegionalData] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         async function loadData() {
@@ -19,6 +21,8 @@ const RegionalSection = () => {
                 setRegionalData(data)
             } catch (e){
                 console.error(e)
+            } finally {
+                setIsLoading(false)
             }
         }
         loadData()
@@ -31,23 +35,28 @@ const RegionalSection = () => {
                 <ChurnCard/>
             </div>
             <div className='col-span-3'>
-                {regionalData.map((item) => (
-                    <RegionalCard
-                    key={item.id}
-                    data={item}
-                    />
-                ))}
+                <AnimatedCard
+                    isLoading={isLoading}
+                    skeleton={<SkeletonList rows={3} />}
+                >
+                    {regionalData.map((item) => (
+                        <RegionalCard
+                        key={item.id}
+                        data={item}
+                        />
+                    ))}
+                </AnimatedCard>
             </div>
         </div>
 
         <div className="">
             <FixedBroadCard/>
         </div>
-        
+
         <div className="">
             <MobileBroadCard/>
         </div>
-        
+
         <div className="px-2">
             <PayloadCard/>
         </div>

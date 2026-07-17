@@ -5,6 +5,7 @@ import { useState,useEffect } from 'react'
 import { getMigrationData } from '../../../../services/migrationService'
 
 import {UserRound} from 'lucide-react'
+import { AnimatedCard, SkeletonChart } from '../../../../animation'
 
 const MigrationSection = () => {
 
@@ -12,6 +13,7 @@ const MigrationSection = () => {
       nodes: [],
       links: []
     })
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         async function loadChart() {
@@ -20,12 +22,14 @@ const MigrationSection = () => {
             setMigrationData(data);
           } catch (error) {
             console.error(error);
+          } finally {
+            setIsLoading(false);
           }
         }
-    
+
         loadChart();
     }, []);
-    
+
   return (
     <div className='bg-white mr-2 rounded-2xl border border-slate-200 h-full flex flex-col'>
         <div className='px-6 2xl:py-3 2xl:mt-1 lg:py-1.5 lg:mt-1 '>
@@ -36,12 +40,18 @@ const MigrationSection = () => {
             <h2>Total FMC Sale</h2>
             <h2>Outcoming Sample</h2>
         </div>
-        <div className='h-full'>
-            <SankeyChart
-                data={migration}
-            />
-        </div>
-        
+        <AnimatedCard
+            isLoading={isLoading}
+            className="h-full h-70"
+            skeleton={<SkeletonChart className="h-full" />}
+        >
+            <div className='h-full'>
+                <SankeyChart
+                    data={migration}
+                />
+            </div>
+        </AnimatedCard>
+
         <div className="flex items-center gap-3  p-6 lg:p-5 xl:p-6 2xl:p-8 ">
             <div className="border border-zinc-500 rounded-2xl">
                 <UserRound/>
@@ -50,7 +60,7 @@ const MigrationSection = () => {
             <p className="text-xs lg:text-xs xl:text-sm 2xl:text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nihil!</p>
             </div>
       </div>
-       
+
     </div>
   )
 }

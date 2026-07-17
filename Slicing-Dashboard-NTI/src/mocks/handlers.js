@@ -41,7 +41,7 @@ export const handlers = [
   }),
 
   http.get("/api/regionalData", async () => {
-    await delay(2000);
+    await delay(3000);
     return HttpResponse.json(regionalData);
   }),
 

@@ -4,7 +4,7 @@ import GroupBarChart from "./Charts/GroupBarChart";
 import { useState,useEffect } from "react";
 
 import { getCompetitor,getCompetitorSummary } from "../../../services/competitorService";
-import { AnimatedCard, SkeletonBox, SkeletonChart } from "../../../animation";
+import { AnimatedCard, SkeletonBox, SkeletonChart, SkeletonText } from "../../../animation";
 
 const CompetitorCard = () => {
 
@@ -35,14 +35,11 @@ const CompetitorCard = () => {
   return (
     <div className="bg-white rounded-2xl p-2 shadow-sm h-full">
 
-      <h2 className="text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold text-center my-2">
-        Gap with Competitor
-      </h2>
-
       <AnimatedCard
         isLoading={isLoading}
         skeleton={
           <div className="space-y-2">
+            <SkeletonText className="w-32 h-4 mx-auto my-2" />
             <div className="grid grid-cols-2 gap-2 mb-2">
               <SkeletonBox className="h-24" />
               <SkeletonBox className="h-24" />
@@ -51,6 +48,10 @@ const CompetitorCard = () => {
           </div>
         }
       >
+        <h2 className="text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold text-center my-2">
+          Gap with Competitor
+        </h2>
+
         <div className="grid grid-cols-2 mb-2">
 
           {competitorSummaryData.map((item) => (
