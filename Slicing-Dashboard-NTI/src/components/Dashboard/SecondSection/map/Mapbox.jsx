@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
-import { Container } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { fadeIn } from "../../../../animation";
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
-export default function Map(){
+export default function Map({onLoad}){
     const mapRef = useRef(null)
     const [isLoading, setIsLoading] = useState(true)
 
@@ -18,8 +17,9 @@ export default function Map(){
         })
 
         map.on("load", () => {
-            setTimeout(() => setIsLoading(false), 1200); // TEMPORARY, hapus setelah testing
-        })
+            onLoad?.(map);
+            setIsLoading(false);
+        });
 
         return () => map.remove()
     },[])
