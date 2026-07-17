@@ -1,8 +1,3 @@
-// src/animation/Skeleton.jsx
-// Primitive skeleton (pure Tailwind, TANPA motion) untuk disusun ulang
-// sesuai bentuk layout tiap card. Motion tidak diperlukan di sini karena
-// animate-pulse sudah cukup ringan & tidak butuh state React.
-
 export const SkeletonBox = ({ className = "" }) => (
   <div className={`animate-pulse rounded-xl bg-slate-200 ${className}`} />
 );

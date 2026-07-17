@@ -1,12 +1,13 @@
 import StatisticCard from "./StatisticCard";
 import CompetitorCard from "./CompetitorCard";
 import ShareCard from "./ShareCard";
+import { StaggerContainer, StaggerItem } from "../../../animation";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-12  ">
+    <StaggerContainer className="grid grid-cols-12" stagger={1.0}>
 
-      <div className="col-span-8 flex rounded-2xl my-2 2xl:my-3 ml-2 2xl:ml-3 gap-2 bg-white">
+      <StaggerItem className="col-span-8 flex rounded-2xl my-2 2xl:my-3 ml-2 2xl:ml-3 gap-2 bg-white">
 
         <div className="flex-2 ">
             <StatisticCard />
@@ -16,13 +17,13 @@ const Hero = () => {
             <CompetitorCard />
         </div>
 
-    </div>
+      </StaggerItem>
 
-      <div className="col-span-4 m-2 xl:m-3 2xl:m-4">
+      <StaggerItem className="col-span-4 m-2 xl:m-3 2xl:m-4">
           <ShareCard />
-      </div>
+      </StaggerItem>
 
-  </section>
+    </StaggerContainer>
   );
 };
 
