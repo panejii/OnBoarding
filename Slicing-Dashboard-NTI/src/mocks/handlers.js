@@ -17,12 +17,7 @@ export const handlers = [
 
   http.get("/api/fbb-data", async () => {
     await delay(1500);
-    return HttpResponse.json({
-      message: "Internal Server Error",
-    },
-    {
-      status: 500,
-    });
+    return HttpResponse.json(fbbData  );
   }),
 
   http.get("/api/mbb-data", async () => {
@@ -42,7 +37,12 @@ export const handlers = [
 
   http.get("/api/migrationData", async () => {
     await delay(2000);
-    return HttpResponse.json(migrationData);
+    return HttpResponse.json({
+      message: "Internal Server Error",
+    },
+    {
+      status: 500,
+    });
   }),
 
   http.get("/api/regionalData", async () => {
