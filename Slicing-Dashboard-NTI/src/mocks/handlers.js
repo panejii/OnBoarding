@@ -12,7 +12,13 @@ export const handlers = [
   http.get("/api/area-chart", async () => {
     await delay(2000);
     
-    return HttpResponse.json(areaChartData);
+    return HttpResponse.json(
+    {
+      message: "Internal Server Error",
+    },
+    {
+      status: 500,
+    });
   }),
 
   http.get("/api/fbb-data", async () => {
@@ -26,18 +32,12 @@ export const handlers = [
   }),
 
   http.get("/api/competitorData", async () => {
-    await delay(2250);
-    return HttpResponse.json(
-      {
-      message: "Internal Server Error",
-    },
-    {
-      status: 500,
-    });
+    await delay(1000);
+    return HttpResponse.json(competitorData);
   }),
 
   http.get("/api/competitorSummaryData", async () => {
-    await delay(2500);
+    await delay(1500);
     return HttpResponse.json(competitorSummary);
   }),
 
