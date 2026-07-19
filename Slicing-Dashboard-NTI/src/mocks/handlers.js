@@ -27,7 +27,13 @@ export const handlers = [
 
   http.get("/api/competitorData", async () => {
     await delay(2250);
-    return HttpResponse.json(competitorData);
+    return HttpResponse.json(
+      {
+      message: "Internal Server Error",
+    },
+    {
+      status: 500,
+    });
   }),
 
   http.get("/api/competitorSummaryData", async () => {

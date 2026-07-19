@@ -2,7 +2,7 @@
 // - transisi skeleton -> data asli
 // - entrance animation tiap card saat page pertama load / refresh
 export const fadeInUp = {
-  hidden: { opacity: 0, y: 16 },
+  hidden: { opacity: 0, y: 8 },
   show: {
     opacity: 1,
     y: 0,

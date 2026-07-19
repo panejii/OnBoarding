@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
-import { fadeInUp } from "./variants";
+import { fadeIn, fadeInUp } from "./variants";
 
 const AnimatedCard = ({ isLoading, skeleton, children, className = "" }) => {
   return (
