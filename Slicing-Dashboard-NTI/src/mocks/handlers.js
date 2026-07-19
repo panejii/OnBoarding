@@ -12,18 +12,17 @@ export const handlers = [
   http.get("/api/area-chart", async () => {
     await delay(2000);
     
-    return HttpResponse.json(
-    {
+    return HttpResponse.json(areaChartData);
+  }),
+
+  http.get("/api/fbb-data", async () => {
+    await delay(1500);
+    return HttpResponse.json({
       message: "Internal Server Error",
     },
     {
       status: 500,
     });
-  }),
-
-  http.get("/api/fbb-data", async () => {
-    await delay(1500);
-    return HttpResponse.json(fbbData);
   }),
 
   http.get("/api/mbb-data", async () => {
