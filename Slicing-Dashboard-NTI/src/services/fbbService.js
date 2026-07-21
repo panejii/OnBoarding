@@ -1,9 +1,7 @@
-export async function getFbbData() {
-  const response = await fetch("/api/fbb-data");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch fbb data");
-  }
+export async function getFbbData({period, region}) {
+  
+  const params = new URLSearchParams({period,region})
+  const reponse = await fetch(`/api/fbb-data?${params.toString()}`)
 
   return response.json();
 }

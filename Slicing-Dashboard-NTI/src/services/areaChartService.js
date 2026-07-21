@@ -1,9 +1,7 @@
-export async function getAreaChart() {
-  const response = await fetch("/api/area-chart");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch area chart");
-  }
+export async function getAreaChart({period, region}) {
+  
+  const params = new URLSearchParams({period,region})
+  const reponse = await fetch(`/api/area-chart?${params.toString()}`)
 
   return response.json();
 }

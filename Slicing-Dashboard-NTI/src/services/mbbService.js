@@ -1,9 +1,7 @@
-export async function getMbbData() {
-  const response = await fetch("/api/mbb-data");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch mbb data");
-  }
+export async function getMbbData({period, region}) {
+  
+  const params = new URLSearchParams({period,region})
+  const reponse = await fetch(`/api/mbb-data?${params.toString()}`)
 
   return response.json();
 }

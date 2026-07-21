@@ -1,19 +1,15 @@
-export async function getCompetitor() {
-  const response = await fetch("/api/competitorData");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch competitor data");
-  }
+export async function getCompetitor({period, region}) {
+  
+  const params = new URLSearchParams({period,region})
+  const reponse = await fetch(`/api/competitorData?${params.toString()}`)
 
   return response.json();
 }
 
-export async function getCompetitorSummary() {
-  const response = await fetch("/api/competitorSummaryData");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch competitor Summary data");
-  }
+export async function getCompetitorSummary({period, region}) {
+  
+  const params = new URLSearchParams({period,region})
+  const reponse = await fetch(`/api/competitorSummaryData?${params.toString()}`)
 
   return response.json();
 }

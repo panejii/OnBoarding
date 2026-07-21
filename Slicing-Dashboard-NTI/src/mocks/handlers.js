@@ -22,7 +22,7 @@ export const handlers = [
     return HttpResponse.json(result);
   }),
 
-  http.get("/api/fbb-data", async () => {
+  http.get("/api/fbb-data", async ({request}) => {
     await delay(1500);
 
     const url = new URL(request.url);
@@ -46,7 +46,7 @@ export const handlers = [
     return HttpResponse.json(result);
   }),
 
-  http.get("/api/competitorData", async () => {
+  http.get("/api/competitorData", async ({request}) => {
     await delay(1000);
 
     const url = new URL(request.url);
@@ -58,7 +58,7 @@ export const handlers = [
     return HttpResponse.json(result);
   }),
 
-  http.get("/api/competitorSummaryData", async () => {
+  http.get("/api/competitorSummaryData", async ({request}) => {
     await delay(1500);
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
