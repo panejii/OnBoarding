@@ -1,89 +1,92 @@
-{
-  "today": {
-    "nationwide": [
-      { "date": "15/05", "value": 36 }
-    ],
-    "regionalwide": [
-      { "date": "15/05", "value": 32 }
-    ],
-    "citywide": [
-      { "date": "15/05", "value": 29 }
-    ]
-  },
-
-  "this_week": {
-    "nationwide": [
-      { "date": "09/05", "value": 25 },
-      { "date": "10/05", "value": 28 },
-      { "date": "11/05", "value": 26 },
-      { "date": "12/05", "value": 32 },
-      { "date": "13/05", "value": 35 },
-      { "date": "14/05", "value": 33 },
-      { "date": "15/05", "value": 36 }
-    ],
-
-    "regionalwide": [
-      { "date": "09/05", "value": 22 },
-      { "date": "10/05", "value": 24 },
-      { "date": "11/05", "value": 23 },
-      { "date": "12/05", "value": 28 },
-      { "date": "13/05", "value": 30 },
-      { "date": "14/05", "value": 29 },
-      { "date": "15/05", "value": 31 }
-    ],
-
-    "citywide": [
-      { "date": "09/05", "value": 18 },
-      { "date": "10/05", "value": 20 },
-      { "date": "11/05", "value": 19 },
-      { "date": "12/05", "value": 23 },
-      { "date": "13/05", "value": 25 },
-      { "date": "14/05", "value": 24 },
-      { "date": "15/05", "value": 27 }
-    ]
-  },
-
-  "this_month": {
-    "nationwide": [
-      { "date": "05/05", "value": 18 },
-      { "date": "06/05", "value": 20 },
-      { "date": "07/05", "value": 24 },
-      { "date": "08/05", "value": 22 },
-      { "date": "09/05", "value": 25 },
-      { "date": "10/05", "value": 28 },
-      { "date": "11/05", "value": 26 },
-      { "date": "12/05", "value": 32 },
-      { "date": "13/05", "value": 35 },
-      { "date": "14/05", "value": 33 },
-      { "date": "15/05", "value": 36 }
-    ],
-
-    "regionalwide": [
-      { "date": "05/05", "value": 15 },
-      { "date": "06/05", "value": 17 },
-      { "date": "07/05", "value": 20 },
-      { "date": "08/05", "value": 19 },
-      { "date": "09/05", "value": 22 },
-      { "date": "10/05", "value": 24 },
-      { "date": "11/05", "value": 23 },
-      { "date": "12/05", "value": 28 },
-      { "date": "13/05", "value": 30 },
-      { "date": "14/05", "value": 29 },
-      { "date": "15/05", "value": 31 }
-    ],
-
-    "citywide": [
-      { "date": "05/05", "value": 12 },
-      { "date": "06/05", "value": 14 },
-      { "date": "07/05", "value": 16 },
-      { "date": "08/05", "value": 15 },
-      { "date": "09/05", "value": 18 },
-      { "date": "10/05", "value": 20 },
-      { "date": "11/05", "value": 19 },
-      { "date": "12/05", "value": 23 },
-      { "date": "13/05", "value": 25 },
-      { "date": "14/05", "value": 24 },
-      { "date": "15/05", "value": 27 }
-    ]
-  }
-}
+[
+  { "date": "2026-04-01", "region": "NATIONWIDE", "value": 10 },
+  { "date": "2026-04-02", "region": "NATIONWIDE", "value": 11 },
+  { "date": "2026-04-03", "region": "NATIONWIDE", "value": 10 },
+  { "date": "2026-04-04", "region": "NATIONWIDE", "value": 12 },
+  { "date": "2026-04-05", "region": "NATIONWIDE", "value": 13 },
+  { "date": "2026-04-06", "region": "NATIONWIDE", "value": 12 },
+  { "date": "2026-04-07", "region": "NATIONWIDE", "value": 14 },
+  { "date": "2026-04-08", "region": "NATIONWIDE", "value": 15 },
+  { "date": "2026-04-09", "region": "NATIONWIDE", "value": 14 },
+  { "date": "2026-04-10", "region": "NATIONWIDE", "value": 15 },
+  { "date": "2026-04-11", "region": "NATIONWIDE", "value": 16 },
+  { "date": "2026-04-12", "region": "NATIONWIDE", "value": 15 },
+  { "date": "2026-04-13", "region": "NATIONWIDE", "value": 17 },
+  { "date": "2026-04-14", "region": "NATIONWIDE", "value": 18 },
+  { "date": "2026-04-15", "region": "NATIONWIDE", "value": 17 },
+  { "date": "2026-04-16", "region": "NATIONWIDE", "value": 18 },
+  { "date": "2026-04-17", "region": "NATIONWIDE", "value": 20 },
+  { "date": "2026-04-18", "region": "NATIONWIDE", "value": 24 },
+  { "date": "2026-04-19", "region": "NATIONWIDE", "value": 22 },
+  { "date": "2026-04-20", "region": "NATIONWIDE", "value": 25 },
+  { "date": "2026-04-21", "region": "NATIONWIDE", "value": 28 },
+  { "date": "2026-04-22", "region": "NATIONWIDE", "value": 26 },
+  { "date": "2026-04-23", "region": "NATIONWIDE", "value": 32 },
+  { "date": "2026-04-24", "region": "NATIONWIDE", "value": 35 },
+  { "date": "2026-04-25", "region": "NATIONWIDE", "value": 33 },
+  { "date": "2026-04-26", "region": "NATIONWIDE", "value": 36 },
+  { "date": "2026-04-27", "region": "NATIONWIDE", "value": 38 },
+  { "date": "2026-04-28", "region": "NATIONWIDE", "value": 37 },
+  { "date": "2026-04-29", "region": "NATIONWIDE", "value": 39 },
+  { "date": "2026-04-30", "region": "NATIONWIDE", "value": 41 },
+  { "date": "2026-04-01", "region": "REGIONALWIDE", "value": 8 },
+  { "date": "2026-04-02", "region": "REGIONALWIDE", "value": 9 },
+  { "date": "2026-04-03", "region": "REGIONALWIDE", "value": 8 },
+  { "date": "2026-04-04", "region": "REGIONALWIDE", "value": 10 },
+  { "date": "2026-04-05", "region": "REGIONALWIDE", "value": 11 },
+  { "date": "2026-04-06", "region": "REGIONALWIDE", "value": 10 },
+  { "date": "2026-04-07", "region": "REGIONALWIDE", "value": 12 },
+  { "date": "2026-04-08", "region": "REGIONALWIDE", "value": 13 },
+  { "date": "2026-04-09", "region": "REGIONALWIDE", "value": 12 },
+  { "date": "2026-04-10", "region": "REGIONALWIDE", "value": 13 },
+  { "date": "2026-04-11", "region": "REGIONALWIDE", "value": 14 },
+  { "date": "2026-04-12", "region": "REGIONALWIDE", "value": 13 },
+  { "date": "2026-04-13", "region": "REGIONALWIDE", "value": 15 },
+  { "date": "2026-04-14", "region": "REGIONALWIDE", "value": 15 },
+  { "date": "2026-04-15", "region": "REGIONALWIDE", "value": 14 },
+  { "date": "2026-04-16", "region": "REGIONALWIDE", "value": 15 },
+  { "date": "2026-04-17", "region": "REGIONALWIDE", "value": 17 },
+  { "date": "2026-04-18", "region": "REGIONALWIDE", "value": 20 },
+  { "date": "2026-04-19", "region": "REGIONALWIDE", "value": 19 },
+  { "date": "2026-04-20", "region": "REGIONALWIDE", "value": 22 },
+  { "date": "2026-04-21", "region": "REGIONALWIDE", "value": 24 },
+  { "date": "2026-04-22", "region": "REGIONALWIDE", "value": 23 },
+  { "date": "2026-04-23", "region": "REGIONALWIDE", "value": 28 },
+  { "date": "2026-04-24", "region": "REGIONALWIDE", "value": 30 },
+  { "date": "2026-04-25", "region": "REGIONALWIDE", "value": 29 },
+  { "date": "2026-04-26", "region": "REGIONALWIDE", "value": 31 },
+  { "date": "2026-04-27", "region": "REGIONALWIDE", "value": 33 },
+  { "date": "2026-04-28", "region": "REGIONALWIDE", "value": 32 },
+  { "date": "2026-04-29", "region": "REGIONALWIDE", "value": 34 },
+  { "date": "2026-04-30", "region": "REGIONALWIDE", "value": 35 },
+  { "date": "2026-04-01", "region": "CITYWIDE", "value": 6 },
+  { "date": "2026-04-02", "region": "CITYWIDE", "value": 7 },
+  { "date": "2026-04-03", "region": "CITYWIDE", "value": 6 },
+  { "date": "2026-04-04", "region": "CITYWIDE", "value": 8 },
+  { "date": "2026-04-05", "region": "CITYWIDE", "value": 9 },
+  { "date": "2026-04-06", "region": "CITYWIDE", "value": 8 },
+  { "date": "2026-04-07", "region": "CITYWIDE", "value": 10 },
+  { "date": "2026-04-08", "region": "CITYWIDE", "value": 10 },
+  { "date": "2026-04-09", "region": "CITYWIDE", "value": 9 },
+  { "date": "2026-04-10", "region": "CITYWIDE", "value": 10 },
+  { "date": "2026-04-11", "region": "CITYWIDE", "value": 11 },
+  { "date": "2026-04-12", "region": "CITYWIDE", "value": 10 },
+  { "date": "2026-04-13", "region": "CITYWIDE", "value": 12 },
+  { "date": "2026-04-14", "region": "CITYWIDE", "value": 12 },
+  { "date": "2026-04-15", "region": "CITYWIDE", "value": 11 },
+  { "date": "2026-04-16", "region": "CITYWIDE", "value": 12 },
+  { "date": "2026-04-17", "region": "CITYWIDE", "value": 14 },
+  { "date": "2026-04-18", "region": "CITYWIDE", "value": 16 },
+  { "date": "2026-04-19", "region": "CITYWIDE", "value": 15 },
+  { "date": "2026-04-20", "region": "CITYWIDE", "value": 18 },
+  { "date": "2026-04-21", "region": "CITYWIDE", "value": 20 },
+  { "date": "2026-04-22", "region": "CITYWIDE", "value": 19 },
+  { "date": "2026-04-23", "region": "CITYWIDE", "value": 23 },
+  { "date": "2026-04-24", "region": "CITYWIDE", "value": 25 },
+  { "date": "2026-04-25", "region": "CITYWIDE", "value": 24 },
+  { "date": "2026-04-26", "region": "CITYWIDE", "value": 27 },
+  { "date": "2026-04-27", "region": "CITYWIDE", "value": 28 },
+  { "date": "2026-04-28", "region": "CITYWIDE", "value": 28 },
+  { "date": "2026-04-29", "region": "CITYWIDE", "value": 29 },
+  { "date": "2026-04-30", "region": "CITYWIDE", "value": 30 }
+]

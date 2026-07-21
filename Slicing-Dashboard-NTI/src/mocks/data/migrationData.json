@@ -3,240 +3,2790 @@
     "nationwide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 15
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 13
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 42
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 49
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 14
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 12
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 51
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 52
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 45
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 19
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 58
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 25
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 40
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 18
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 58
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 24
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 58
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 45
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 41
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 24
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 59
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 43
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 37
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 23
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 110
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 30
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 67
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 22
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 101
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 27
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 67
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 19
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 70
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 45
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 34
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 25
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 70
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 40
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 34
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 24
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 105
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 25
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 22
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 68
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 93
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 23
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 20
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 64
+            }
+          ]
         }
       }
     },
     "regionalwide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 10
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 9
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 27
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 32
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 9
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 8
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 32
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 35
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 28
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 13
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 38
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 16
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 29
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 13
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 38
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 16
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 40
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 30
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 25
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 15
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 37
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 27
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 24
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 16
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 71
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 19
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 46
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 14
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 66
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 17
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 41
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 12
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 46
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 27
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 22
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 17
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 43
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 25
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 22
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 15
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 64
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 16
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 14
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 45
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 65
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 15
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 13
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 42
+            }
+          ]
         }
       }
     },
     "citywide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 6
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 5
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 16
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 18
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 4
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 4
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 17
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 19
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 15
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 7
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 20
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 9
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 15
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 7
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 21
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 8
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 21
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 15
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 15
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 9
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 20
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 15
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 13
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 8
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 38
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 11
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 25
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 8
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 32
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 9
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 22
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 7
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 25
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 15
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 12
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 8
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 25
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 15
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 11
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 8
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 34
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 9
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 8
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 23
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 34
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 8
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 7
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 24
+            }
+          ]
         }
       }
     }
   },
-
   "this_week": {
     "nationwide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 74
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 68
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 213
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 256
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 65
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 56
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 257
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 274
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 224
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 100
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 289
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 122
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 209
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 96
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 280
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 117
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 287
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 228
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 195
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 130
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 298
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 203
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 183
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 122
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 510
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 144
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 365
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 113
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 486
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 136
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 335
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 92
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 336
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 211
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 169
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 125
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 345
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 203
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 170
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 113
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 508
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 128
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 119
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 336
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 472
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 119
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 102
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 318
+            }
+          ]
         }
       }
     },
     "regionalwide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 48
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 47
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 137
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 168
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 44
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 36
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 167
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 181
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 153
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 68
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 202
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 79
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 138
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 60
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 185
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 75
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 193
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 153
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 127
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 84
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 186
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 137
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 127
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 82
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 343
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 100
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 220
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 72
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 332
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 87
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 212
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 63
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 217
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 139
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 111
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 84
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 212
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 136
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 101
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 74
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 336
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 86
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 73
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 216
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 329
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 76
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 67
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 214
+            }
+          ]
         }
       }
     },
     "citywide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 26
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 25
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 75
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 91
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 23
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 21
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 84
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 94
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 80
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 34
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 103
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 45
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 71
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 33
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 106
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 44
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 101
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 76
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 68
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 46
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 104
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 77
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 65
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 41
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 190
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 54
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 124
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 41
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 173
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 44
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 117
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 33
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 125
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 78
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 57
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 42
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 113
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 70
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 56
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 42
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 183
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 44
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 41
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 118
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 170
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 44
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 37
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 109
+            }
+          ]
         }
       }
     }
   },
-
   "this_month": {
     "nationwide": {
       "fmc": {
         "sample": {
           "nodes": [
-            { "name": "Indosat" },
-            { "name": "XL Axiata" },
-            { "name": "XL Home" },
-            { "name": "HiFi" },
-            { "name": "FMC" },
-            { "name": "Indosat Out" },
-            { "name": "XL Axiata Out" },
-            { "name": "XL Home Out" },
-            { "name": "HiFi Out" }
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
           ],
           "links": [
-            { "source": "Indosat", "target": "FMC", "value": 307 },
-            { "source": "XL Axiata", "target": "FMC", "value": 292 },
-            { "source": "XL Home", "target": "FMC", "value": 894 },
-            { "source": "HiFi", "target": "FMC", "value": 1054 },
-            { "source": "FMC", "target": "Indosat Out", "value": 282 },
-            { "source": "FMC", "target": "XL Axiata Out", "value": 241 },
-            { "source": "FMC", "target": "XL Home Out", "value": 1011 },
-            { "source": "FMC", "target": "HiFi Out", "value": 1114 }
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 307
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 292
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 894
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 1054
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 282
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 241
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 1011
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 1114
+            }
           ]
         },
         "connectionType": {
           "nodes": [
-             { "name": "Mobile Prepaid" },
-            { "name": "Mobile Postpaid" },
-            { "name": "Fiber Internet" },
-            { "name": "Fixed Wireless" },
-            { "name": "FMC" },
-            { "name": "Mobile Prepaid Out" },
-            { "name": "Mobile Postpaid Out" },
-            { "name": "Fiber Internet Out" },
-            { "name": "Fixed Wireless Out" }
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
           ],
           "links": [
-           {
+            {
               "source": "Mobile Prepaid",
               "target": "FMC",
               "value": 950
@@ -279,232 +2829,1192 @@
           ]
         }
       },
-
       "mbb": {
         "sample": {
           "nodes": [
-            { "name": "Telkomsel" },
-            { "name": "Indosat" },
-            { "name": "XL Axiata" },
-            { "name": "Tri" },
-            { "name": "MBB" },
-            { "name": "Telkomsel Out" },
-            { "name": "Indosat Out" },
-            { "name": "XL Axiata Out" },
-            { "name": "Tri Out" }
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
           ],
           "links": [
-            { "source": "Telkomsel", "target": "MBB", "value": 1250 },
-            { "source": "Indosat", "target": "MBB", "value": 920 },
-            { "source": "XL Axiata", "target": "MBB", "value": 810 },
-            { "source": "Tri", "target": "MBB", "value": 540 },
-            { "source": "MBB", "target": "Telkomsel Out", "value": 1180 },
-            { "source": "MBB", "target": "Indosat Out", "value": 870 },
-            { "source": "MBB", "target": "XL Axiata Out", "value": 765 },
-            { "source": "MBB", "target": "Tri Out", "value": 505 }
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 1250
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 920
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 810
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 540
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 1180
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 870
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 765
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 505
+            }
           ]
         },
         "connectionType": {
           "nodes": [
-                { "name": "Prepaid" },
-        { "name": "Postpaid" },
-        { "name": "Data Package" },
-        { "name": "Internet Only" },
-        { "name": "MBB" },
-        { "name": "Prepaid Out" },
-        { "name": "Postpaid Out" },
-        { "name": "Data Package Out" },
-        { "name": "Internet Only Out" }
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
           ],
           "links": [
             {
-          "source": "Prepaid",
-          "target": "MBB",
-          "value": 2150
-        },
-        {
-          "source": "Postpaid",
-          "target": "MBB",
-          "value": 620
-        },
-        {
-          "source": "Data Package",
-          "target": "MBB",
-          "value": 1450
-        },
-        {
-          "source": "Internet Only",
-          "target": "MBB",
-          "value": 460
-        },
-        {
-          "source": "MBB",
-          "target": "Prepaid Out",
-          "value": 1980
-        },
-        {
-          "source": "MBB",
-          "target": "Postpaid Out",
-          "value": 540
-        },
-        {
-          "source": "MBB",
-          "target": "Data Package Out",
-          "value": 1310
-        },
-        {
-          "source": "MBB",
-          "target": "Internet Only Out",
-          "value": 390
-        }
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 2150
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 620
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 1450
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 460
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 1980
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 540
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 1310
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 390
+            }
           ]
         }
       },
-
       "fbb": {
         "sample": {
           "nodes": [
-            { "name": "IndiHome" },
-            { "name": "Biznet" },
-            { "name": "XL Home" },
-            { "name": "HiFi" },
-            { "name": "FBB" },
-            { "name": "IndiHome Out" },
-            { "name": "Biznet Out" },
-            { "name": "XL Home Out" },
-            { "name": "HiFi Out" }
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
           ],
           "links": [
-            { "source": "IndiHome", "target": "FBB", "value": 1435 },
-            { "source": "Biznet", "target": "FBB", "value": 860 },
-            { "source": "XL Home", "target": "FBB", "value": 690 },
-            { "source": "HiFi", "target": "FBB", "value": 510 },
-            { "source": "FBB", "target": "IndiHome Out", "value": 1360 },
-            { "source": "FBB", "target": "Biznet Out", "value": 815 },
-            { "source": "FBB", "target": "XL Home Out", "value": 655 },
-            { "source": "FBB", "target": "HiFi Out", "value": 482 }
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 1435
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 860
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 690
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 510
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 1360
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 815
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 655
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 482
+            }
           ]
         },
         "connectionType": {
           "nodes": [
-                    { "name": "Fiber Optic" },
-        { "name": "Wireless Broadband" },
-        { "name": "Cable Internet" },
-        { "name": "FTTH" },
-        { "name": "FBB" },
-        { "name": "Fiber Optic Out" },
-        { "name": "Wireless Broadband Out" },
-        { "name": "Cable Internet Out" },
-        { "name": "FTTH Out" }
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
           ],
           "links": [
             {
-          "source": "Fiber Optic",
-          "target": "FBB",
-          "value": 2100
-        },
-        {
-          "source": "Wireless Broadband",
-          "target": "FBB",
-          "value": 540
-        },
-        {
-          "source": "Cable Internet",
-          "target": "FBB",
-          "value": 480
-        },
-        {
-          "source": "FTTH",
-          "target": "FBB",
-          "value": 1400
-        },
-        {
-          "source": "FBB",
-          "target": "Fiber Optic Out",
-          "value": 1980
-        },
-        {
-          "source": "FBB",
-          "target": "Wireless Broadband Out",
-          "value": 490
-        },
-        {
-          "source": "FBB",
-          "target": "Cable Internet Out",
-          "value": 420
-        },
-        {
-          "source": "FBB",
-          "target": "FTTH Out",
-          "value": 1320
-        }
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 2100
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 540
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 480
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 1400
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 1980
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 490
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 420
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 1320
+            }
           ]
         }
       }
     },
-
     "regionalwide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 194
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 178
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 525
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 668
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 178
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 146
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 652
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 706
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 581
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 247
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 747
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 337
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 575
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 248
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 773
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 315
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 753
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 563
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 510
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 338
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 770
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 572
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 507
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 303
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 1331
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 375
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 935
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 304
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 1256
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 349
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 816
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 258
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 943
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 579
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 456
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 337
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 836
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 532
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 415
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 319
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 1373
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 350
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 308
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 876
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 1304
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 300
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 276
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 875
+            }
+          ]
         }
       }
     },
-
     "citywide": {
       "fmc": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Indosat",
+              "target": "FMC",
+              "value": 102
+            },
+            {
+              "source": "XL Axiata",
+              "target": "FMC",
+              "value": 101
+            },
+            {
+              "source": "XL Home",
+              "target": "FMC",
+              "value": 296
+            },
+            {
+              "source": "HiFi",
+              "target": "FMC",
+              "value": 343
+            },
+            {
+              "source": "FMC",
+              "target": "Indosat Out",
+              "value": 97
+            },
+            {
+              "source": "FMC",
+              "target": "XL Axiata Out",
+              "value": 78
+            },
+            {
+              "source": "FMC",
+              "target": "XL Home Out",
+              "value": 327
+            },
+            {
+              "source": "FMC",
+              "target": "HiFi Out",
+              "value": 366
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Mobile Prepaid"
+            },
+            {
+              "name": "Mobile Postpaid"
+            },
+            {
+              "name": "Fiber Internet"
+            },
+            {
+              "name": "Fixed Wireless"
+            },
+            {
+              "name": "FMC"
+            },
+            {
+              "name": "Mobile Prepaid Out"
+            },
+            {
+              "name": "Mobile Postpaid Out"
+            },
+            {
+              "name": "Fiber Internet Out"
+            },
+            {
+              "name": "Fixed Wireless Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 310
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 145
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 440
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 171
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 302
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 132
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 422
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 169
+            }
+          ]
         }
       },
       "mbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Telkomsel"
+            },
+            {
+              "name": "Indosat"
+            },
+            {
+              "name": "XL Axiata"
+            },
+            {
+              "name": "Tri"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Telkomsel Out"
+            },
+            {
+              "name": "Indosat Out"
+            },
+            {
+              "name": "XL Axiata Out"
+            },
+            {
+              "name": "Tri Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Telkomsel",
+              "target": "MBB",
+              "value": 438
+            },
+            {
+              "source": "Indosat",
+              "target": "MBB",
+              "value": 303
+            },
+            {
+              "source": "XL Axiata",
+              "target": "MBB",
+              "value": 293
+            },
+            {
+              "source": "Tri",
+              "target": "MBB",
+              "value": 169
+            },
+            {
+              "source": "MBB",
+              "target": "Telkomsel Out",
+              "value": 421
+            },
+            {
+              "source": "MBB",
+              "target": "Indosat Out",
+              "value": 291
+            },
+            {
+              "source": "MBB",
+              "target": "XL Axiata Out",
+              "value": 252
+            },
+            {
+              "source": "MBB",
+              "target": "Tri Out",
+              "value": 167
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Prepaid"
+            },
+            {
+              "name": "Postpaid"
+            },
+            {
+              "name": "Data Package"
+            },
+            {
+              "name": "Internet Only"
+            },
+            {
+              "name": "MBB"
+            },
+            {
+              "name": "Prepaid Out"
+            },
+            {
+              "name": "Postpaid Out"
+            },
+            {
+              "name": "Data Package Out"
+            },
+            {
+              "name": "Internet Only Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Prepaid",
+              "target": "MBB",
+              "value": 752
+            },
+            {
+              "source": "Postpaid",
+              "target": "MBB",
+              "value": 206
+            },
+            {
+              "source": "Data Package",
+              "target": "MBB",
+              "value": 495
+            },
+            {
+              "source": "Internet Only",
+              "target": "MBB",
+              "value": 158
+            },
+            {
+              "source": "MBB",
+              "target": "Prepaid Out",
+              "value": 675
+            },
+            {
+              "source": "MBB",
+              "target": "Postpaid Out",
+              "value": 187
+            },
+            {
+              "source": "MBB",
+              "target": "Data Package Out",
+              "value": 444
+            },
+            {
+              "source": "MBB",
+              "target": "Internet Only Out",
+              "value": 136
+            }
+          ]
         }
       },
       "fbb": {
         "sample": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "IndiHome"
+            },
+            {
+              "name": "Biznet"
+            },
+            {
+              "name": "XL Home"
+            },
+            {
+              "name": "HiFi"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "IndiHome Out"
+            },
+            {
+              "name": "Biznet Out"
+            },
+            {
+              "name": "XL Home Out"
+            },
+            {
+              "name": "HiFi Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "IndiHome",
+              "target": "FBB",
+              "value": 466
+            },
+            {
+              "source": "Biznet",
+              "target": "FBB",
+              "value": 310
+            },
+            {
+              "source": "XL Home",
+              "target": "FBB",
+              "value": 239
+            },
+            {
+              "source": "HiFi",
+              "target": "FBB",
+              "value": 179
+            },
+            {
+              "source": "FBB",
+              "target": "IndiHome Out",
+              "value": 484
+            },
+            {
+              "source": "FBB",
+              "target": "Biznet Out",
+              "value": 285
+            },
+            {
+              "source": "FBB",
+              "target": "XL Home Out",
+              "value": 224
+            },
+            {
+              "source": "FBB",
+              "target": "HiFi Out",
+              "value": 157
+            }
+          ]
         },
         "connectionType": {
-          "nodes": [],
-          "links": []
+          "nodes": [
+            {
+              "name": "Fiber Optic"
+            },
+            {
+              "name": "Wireless Broadband"
+            },
+            {
+              "name": "Cable Internet"
+            },
+            {
+              "name": "FTTH"
+            },
+            {
+              "name": "FBB"
+            },
+            {
+              "name": "Fiber Optic Out"
+            },
+            {
+              "name": "Wireless Broadband Out"
+            },
+            {
+              "name": "Cable Internet Out"
+            },
+            {
+              "name": "FTTH Out"
+            }
+          ],
+          "links": [
+            {
+              "source": "Fiber Optic",
+              "target": "FBB",
+              "value": 729
+            },
+            {
+              "source": "Wireless Broadband",
+              "target": "FBB",
+              "value": 179
+            },
+            {
+              "source": "Cable Internet",
+              "target": "FBB",
+              "value": 158
+            },
+            {
+              "source": "FTTH",
+              "target": "FBB",
+              "value": 500
+            },
+            {
+              "source": "FBB",
+              "target": "Fiber Optic Out",
+              "value": 697
+            },
+            {
+              "source": "FBB",
+              "target": "Wireless Broadband Out",
+              "value": 165
+            },
+            {
+              "source": "FBB",
+              "target": "Cable Internet Out",
+              "value": 141
+            },
+            {
+              "source": "FBB",
+              "target": "FTTH Out",
+              "value": 451
+            }
+          ]
         }
       }
     }

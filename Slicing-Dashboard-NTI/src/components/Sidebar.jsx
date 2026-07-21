@@ -25,7 +25,7 @@ const Sidebar = () => {
             <p className='text-[6px] lg:text-[7px] xl:text-[8px] 2xl:text-[9px] text-zinc-500'>Main</p>
             
             {/* Sidebar Menu */}
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-1 mt-2">
                 {menus.map((menu) => {
                 const Icon = menu.icon;
                 const isActive = active === menu.id;

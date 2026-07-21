@@ -8,6 +8,19 @@ import mbbData from './data/mbbData.json'
 import migrationData from './data/migrationData.json'
 import regionalData from './data/regionalData.json'
 
+function periodToRange(period) {
+  // anggap tanggal terakhir di data mock adalah "hari ini"
+  const end = new Date("2026-04-26");
+  const start = new Date(end);
+
+  if (period === "today") start.setDate(end.getDate());
+  if (period === "this_week") start.setDate(end.getDate() - 7);
+  if (period === "this_month") start.setDate(end.getDate() - 30);
+
+  const fmt = (d) => d.toISOString().split("T")[0];
+  return { start: fmt(start), end: fmt(end) };
+}
+
 export const handlers = [
 
   http.get("/api/area-chart", async ({request}) => {
@@ -15,11 +28,23 @@ export const handlers = [
 
     const url = new URL(request.url)
     const period = url.searchParams.get("period") ?? "this_month"
-    const region = url.searchParams.get("region") ?? "nationwide"
+    const region = (url.searchParams.get("region") ?? "nationwide").toUpperCase()
 
-    const result = areaChartData?.[period]?.[region] ?? []
+    const {start, end} = periodToRange(period)
+
+    const filtered = areaChartData.filter(
+      (row) => row.region === region && row.date >= start && row.date <= end
+    );
     
-    return HttpResponse.json(result);
+    return HttpResponse.json({
+      status: true,
+      data: {
+        category: filtered.map((r) => r.date),
+        series: filtered.map((r) => r.value),
+      },
+      message: "Area chart data retrieved successfully.",
+      pagination: null,
+    });
   }),
 
   
