@@ -9,12 +9,11 @@ import migrationData from './data/migrationData.json'
 import regionalData from './data/regionalData.json'
 
 function periodToRange(period) {
-  // anggap tanggal terakhir di data mock adalah "hari ini"
-  const end = new Date("2026-04-26");
+  const end = new Date("2026-08-21");
   const start = new Date(end);
 
   if (period === "today") start.setDate(end.getDate());
-  if (period === "this_week") start.setDate(end.getDate() - 7);
+  if (period === "this_week") start.setDate(end.getDate() - 6);
   if (period === "this_month") start.setDate(end.getDate() - 30);
 
   const fmt = (d) => d.toISOString().split("T")[0];
@@ -47,7 +46,44 @@ export const handlers = [
     });
   }),
 
-  
+  http.get("/api/competitorData", async ({ request }) => {
+    await delay(500);
+
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = (url.searchParams.get("region") ?? "nationwide").toUpperCase();
+
+    const { start, end } = periodToRange(period);
+
+    const filtered = competitorData.filter(
+      (row) => row.region === region && row.date >= start && row.date <= end
+    );
+
+    return HttpResponse.json({
+      status: true,
+      data: {
+        category: filtered.map((r) => r.date),
+        series: {
+          telkomsel: filtered.map((r) => r.telkomsel),
+          indosat: filtered.map((r) => r.indosat),
+          xl: filtered.map((r) => r.xl),
+        },
+      },
+      message: "Competitor data retrieved successfully.",
+      pagination: null,
+    });
+  }),
+
+  http.get("/api/competitorSummaryData", async ({request}) => {
+    await delay(500);
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = competitorSummary?.[period]?.[region] ?? [];
+
+    return HttpResponse.json(result);
+  }),
 
   http.get("/api/fbb-data", async ({request}) => {
     await delay(500);
@@ -71,29 +107,6 @@ export const handlers = [
     const region = url.searchParams.get("region") ?? "nationwide";
 
     const result = mbbData?.[period]?.[source]?.[region] ?? [];
-
-    return HttpResponse.json(result);
-  }),
-
-  http.get("/api/competitorData", async ({request}) => {
-    await delay(500);
-
-    const url = new URL(request.url);
-    const period = url.searchParams.get("period") ?? "this_month";
-    const region = url.searchParams.get("region") ?? "nationwide";
-
-    const result = competitorData?.[period]?.[region] ?? [];
-
-    return HttpResponse.json(result);
-  }),
-
-  http.get("/api/competitorSummaryData", async ({request}) => {
-    await delay(500);
-    const url = new URL(request.url);
-    const period = url.searchParams.get("period") ?? "this_month";
-    const region = url.searchParams.get("region") ?? "nationwide";
-
-    const result = competitorSummary?.[period]?.[region] ?? [];
 
     return HttpResponse.json(result);
   }),
