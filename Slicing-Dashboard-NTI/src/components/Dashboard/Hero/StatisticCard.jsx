@@ -14,10 +14,11 @@ import {
 } from "../../../animation";
 import ErrorState from "../../ErrorState";
 
+import { useFilterStore } from "../../../store/useFilterStore";
+
 const StatisticCard = () => {
 
-  const [period, setPeriod] = useState("this_week");
-  const [region, setRegion] = useState("nationwide");
+  const {period, region} = useFilterStore()
 
   const {
     data: chartData = [],

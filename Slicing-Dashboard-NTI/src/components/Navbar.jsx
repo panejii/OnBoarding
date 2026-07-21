@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
+import { useFilterStore } from '../store/useFilterStore';
 
 const Navbar = () => {
 
-    const [Granularity, setGranularity] = useState("This Month")
-
-    const onChange = (e) => {
-        const value = e.target.value;
-        setGranularity(value);
-    }
+    const { period, region, setPeriod, setRegion } = useFilterStore();
 
   return (
     <>
@@ -21,13 +17,19 @@ const Navbar = () => {
 
             {/* Dropdown */}
             <div className=' flex items-center gap-3 text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm '>
-                <select value={Granularity} onChange={onChange} className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
+                <select 
+                value={period} 
+                onChange = {(e) => setPeriod(e.target.value)}
+                className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
                     <option value="this_month">This Month</option>
                     <option value="this_week">This Week</option>
                     <option value="today">Today</option>
                 </select>
 
-                <select className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
+                <select 
+                value={region}
+                onChange={(e) => setRegion(e.target.value)}
+                className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
                     <option value="nationwide">NationWide</option>
                     <option value="regionalwide">RegionalWide</option>
                     <option value="citywide">CityWide</option>

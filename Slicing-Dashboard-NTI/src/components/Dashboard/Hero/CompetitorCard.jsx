@@ -2,16 +2,17 @@ import CompetitorSummary from "./CompetitorSummary";
 import GroupBarChart from "./Charts/GroupBarChart";
 
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { use, useState } from "react";
 
 import { getCompetitor, getCompetitorSummary } from "../../../services/competitorService";
 import { AnimatedCard, SkeletonBox, SkeletonChart, SkeletonText } from "../../../animation";
 import ErrorState from "../../ErrorState";
 
+import { useFilterStore } from "../../../store/useFilterStore";
+
 const CompetitorCard = () => {
 
-  const [period, setPeriod] = useState("this_month");
-  const [region, setRegion] = useState("nationwide");
+  const {period, region} = useFilterStore()
 
   const {
     data: competitorSummaryData = [],

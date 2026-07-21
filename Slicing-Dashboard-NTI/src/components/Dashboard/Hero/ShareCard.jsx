@@ -7,11 +7,11 @@ import { getMbbData } from '../../../services/mbbService'
 import { getFbbData } from '../../../services/fbbService'
 import { AnimatedCard, SkeletonBox, SkeletonText } from '../../../animation'
 import ErrorState from '../../ErrorState'
+import { useFilterStore } from '../../../store/useFilterStore'
 
 const ShareCard = () => {
 
-  const [period, setPeriod] = useState("this_month");
-  const [region, setRegion] = useState("nationwide");
+  const {period, region} = useFilterStore()
 
   const {
     data: mbbData = [],
