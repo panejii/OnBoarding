@@ -15,10 +15,10 @@ export async function getCompetitor({ period, region }) {
   }));
 }
 
-export async function getCompetitorSummary({period, region}) {
-  
-  const params = new URLSearchParams({period,region})
-  const response = await fetch(`/api/competitorSummaryData?${params.toString()}`)
+export async function getCompetitorSummary({ period, region }) {
+  const params = new URLSearchParams({ period, region });
+  const response = await fetch(`/api/competitorSummaryData?${params.toString()}`);
 
-  return response.json();
+  const json = await response.json();
+  return json.data;
 }
