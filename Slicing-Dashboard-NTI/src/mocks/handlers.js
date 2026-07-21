@@ -9,30 +9,64 @@ import migrationData from './data/migrationData.json'
 import regionalData from './data/regionalData.json'
 
 export const handlers = [
-  http.get("/api/area-chart", async () => {
+
+  http.get("/api/area-chart", async ({request}) => {
     await delay(2000);
+
+    const url = new URL(request.url)
+    const period = url.searchParams.get("period") ?? "this_month"
+    const region = url.searchParams.get("region") ?? "nationWide"
+
+    const result = areaChartData?.[period]?.[region] ?? []
     
-    return HttpResponse.json(areaChartData);
+    return HttpResponse.json(result);
   }),
 
   http.get("/api/fbb-data", async () => {
     await delay(1500);
-    return HttpResponse.json(fbbData  );
+
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = fbbData?.[period]?.[region] ?? [];
+
+    return HttpResponse.json(result);
   }),
 
-  http.get("/api/mbb-data", async () => {
+  http.get("/api/mbb-data", async ({ request }) => {
     await delay(2260);
-    return HttpResponse.json(mbbData);
+
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = mbbData?.[period]?.[region] ?? [];
+
+    return HttpResponse.json(result);
   }),
 
   http.get("/api/competitorData", async () => {
     await delay(1000);
-    return HttpResponse.json(competitorData);
+
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = competitorData?.[period]?.[region] ?? [];
+
+    return HttpResponse.json(result);
   }),
 
   http.get("/api/competitorSummaryData", async () => {
     await delay(1500);
-    return HttpResponse.json(competitorSummary);
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = competitorSummary?.[period]?.[region] ?? [];
+
+    return HttpResponse.json(result);
   }),
 
   http.get("/api/migrationData", async () => {
