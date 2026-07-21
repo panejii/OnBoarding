@@ -37,12 +37,7 @@ export const handlers = [
 
   http.get("/api/migrationData", async () => {
     await delay(2000);
-    return HttpResponse.json({
-      message: "Internal Server Error",
-    },
-    {
-      status: 500,
-    });
+    return HttpResponse.json(migrationData);
   }),
 
   http.get("/api/regionalData", async () => {
@@ -52,3 +47,10 @@ export const handlers = [
 
 
 ];
+
+  //  {
+  //     message: "Internal Server Error",
+  //   },
+  //   {
+  //     status: 500,
+  //   }

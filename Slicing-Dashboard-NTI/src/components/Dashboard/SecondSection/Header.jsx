@@ -8,8 +8,8 @@ const Header = () => {
             <div >
                 <select className='text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs bg-white rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-zinc-200 duration-300'>
                     <option value="">This Month</option>
-                    <option value="">Last Month</option>
-                    <option value="">Last 6 Month</option>
+                    <option value="">This Week</option>
+                    <option value="">Today</option>
                 </select>
             </div>
         </div>
