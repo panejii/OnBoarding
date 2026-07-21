@@ -71,9 +71,18 @@ export const handlers = [
     return HttpResponse.json(result);
   }),
 
-  http.get("/api/migrationData", async () => {
+  http.get("/api/migrationData", async ({request}) => {
     await delay(500);
-    return HttpResponse.json(migrationData);
+
+    const url = new URL(request.url)
+    const period = url.searchParams.get("period") ?? "this_month"
+    const region = url.searchParams.get("region") ?? "nationwide"
+    const category = url.searchParams.get("category") ?? "fmc"
+    const movement = url.searchParams.get("movement") ?? "sample"
+
+    const result = migrationData?.[period]?.[region]?.[category]?.[movement] ?? []
+
+    return HttpResponse.json(result);
   }),
 
   http.get("/api/regionalData", async () => {

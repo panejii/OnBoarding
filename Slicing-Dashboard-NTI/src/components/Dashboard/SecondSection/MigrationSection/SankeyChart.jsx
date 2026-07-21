@@ -1,9 +1,6 @@
 import ReactECharts from "echarts-for-react";
 
 const SankeyChart = ({ data }) => {
-
-  console.log(data)
-
   const option = {
     tooltip: {
       trigger: "item",
@@ -12,33 +9,30 @@ const SankeyChart = ({ data }) => {
     series: [
       {
         type: "sankey",
-
         layout: "none",
-
+        left: "18%",   // ⬅️ kasih ruang buat label kiri
+        right: "18%",  // ⬅️ kasih ruang buat label kanan
         nodeGap: 70,
-
-        nodeWidth: 3,  
+        nodeWidth: 3,
 
         emphasis: {
           focus: "adjacency",
         },
 
-        // data: data.nodes,
-
-        // links: data.links,
-
-        data: data.nodes.map((n, i) => ({
+        data: data.nodes.map((n) => ({
           ...n,
           x: n.side === "left" ? 0.05 : n.side === "right" ? 0.95 : 0.5,
-          y: n.y, // atur manual per posisi vertikal, jaraknya kamu tentukan sendiri
+          y: n.y,
+          label: {
+            position: n.side === "right" ? "left" : "right",
+          },
         })),
+
         links: data.links.map((l) => ({
           ...l,
-          value: 1, // paksa semua link "setebal" yang sama
+          actualValue: l.value,
+          value: 1,
         })),
-        label: {
-          formatter: (p) => `${p.name}\n${originalValueMap[p.name]}`,
-        },
 
         lineStyle: {
           color: "gradient",
@@ -49,6 +43,14 @@ const SankeyChart = ({ data }) => {
         label: {
           color: "#374151",
           fontSize: 8,
+          formatter: (p) => p.name,
+        },
+
+        edgeLabel: {
+          show: true,
+          fontSize: 8,
+          color: "#374151",
+          formatter: (p) => p.data.actualValue,
         },
       },
     ],
@@ -57,10 +59,7 @@ const SankeyChart = ({ data }) => {
   return (
     <ReactECharts
       option={option}
-      style={{
-        width: "100%",
-        height: "100%",
-      }}
+      style={{ width: "100%", height: "100%" }}
     />
   );
 };

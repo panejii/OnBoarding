@@ -12,14 +12,19 @@ import {
 } from "../../../../animation";
 import ErrorState from "../../../ErrorState";
 
+import { useFilterStore } from "../../../../store/useFilterStore";
+
 const MigrationSection = () => {
+
+  const {period, region, category, movement} = useFilterStore()
+
   const {
     data: migration = { nodes: [], links: [] },
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ["migrationData"],
-    queryFn: getMigrationData,
+    queryKey: ["migrationData", period, region, category, movement],
+    queryFn: () => getMigrationData({period, region, category, movement}),
   });
 
   return (
@@ -65,6 +70,7 @@ const MigrationSection = () => {
           {isError ? (
             <ErrorState message="Gagal memuat data migrasi user." />
           ) : (
+            
             <SankeyChart data={migration} />
           )}
         </div>

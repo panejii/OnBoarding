@@ -1,29 +1,63 @@
 import React from 'react'
 import { CircleAlert } from 'lucide-react';
+import { useFilterStore } from '../../../store/useFilterStore';
 
 const Header = () => {
-  return (
+
+    const { category, movement, setCategory, setMovement} = useFilterStore()
+
+    return (
     <div className='grid grid-cols-5'>
         <div className='bg-slate-100 col-span-1 rounded-t-4xl px-2 py-2'>
             <div >
-                <select className='text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs bg-white rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-zinc-200 duration-300'>
-                    <option value="">This Month</option>
-                    <option value="">This Week</option>
-                    <option value="">Today</option>
+                <select 
+                value={category}
+                onChange= {(e) => setCategory(e.target.value)}
+                className='text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs bg-white rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-zinc-200 duration-300'>
+                    <option value="fmc">FMC</option>
+                    <option value="mbb">MBB</option>
+                    <option value="fbb">FBB</option>
                 </select>
             </div>
         </div>
 
         {/* MidField */}
         <div className='bg-white col-span-3 rounded-b-4xl flex justify-center items-center border-t-white '>
-            <div className='bg-slate-200 flex gap-3 justify-center text-center items-center  rounded-4xl py-0.5 xl:py-1 px-1'>
-                <div className='bg-white py-0.5  px-2 rounded-4xl' >
-                    <h1 className='font-semibold text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs'>Moving Sample</h1>
-                </div>
-                <div className='py-1 pr-1 rounded-4xl text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs   '>
+            <div className="bg-slate-200 flex rounded-full p-1">
+
+                <button
+                    onClick={() => setMovement("sample")}
+                    className={`
+                    px-3 py-1 rounded-full transition-all duration-300
+                    text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs
+
+                    ${
+                        movement === "sample"
+                        ? "bg-white shadow font-semibold"
+                        : "text-gray-500"
+                    }
+                    `}
+                >
+                    Moving Sample
+                </button>
+
+                <button
+                    onClick={() => setMovement("connectionType")}
+                    className={`
+                    px-3 py-1 rounded-full transition-all duration-300
+                    text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs
+
+                    ${
+                        movement === "connectionType"
+                        ? "bg-white shadow font-semibold"
+                        : "text-gray-500"
+                    }
+                    `}
+                >
                     Moving By Connection Type
+                </button>
+
                 </div>
-            </div>
 
             <div className='mx-3 border border-zinc-300 p-1 rounded-lg'>
                 <CircleAlert size={16}/>

@@ -1,73 +1,512 @@
-  {
-    "nodes": [
-      {
-        "name": "Indosat"
+{
+  "today": {
+    "nationwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       },
-      {
-        "name": "XL Axiata"
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       },
-      {
-        "name": "XL Home"
-      },
-      {
-        "name": "HiFi"
-      },
-      {
-        "name": "FMC"
-      },
-      {
-        "name": "Indosat Out"
-      },
-      {
-        "name": "XL Axiata Out"
-      },
-      {
-        "name": "XL Home Out"
-      },
-      {
-        "name": "HiFi Out"
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       }
-    ],
-    "links": [
-      {
-        "source": "Indosat",
-        "target": "FMC",
-        "value": 307
+    },
+    "regionalwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       },
-      {
-        "source": "XL Axiata",
-        "target": "FMC",
-        "value": 292
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       },
-      {
-        "source": "XL Home",
-        "target": "FMC",
-        "value": 894
-      },
-      {
-        "source": "HiFi",
-        "target": "FMC",
-        "value": 1054
-      },
-      {
-        "source": "FMC",
-        "target": "Indosat Out",
-        "value": 282
-      },
-      {
-        "source": "FMC",
-        "target": "XL Axiata Out",
-        "value": 241
-      },
-      {
-        "source": "FMC",
-        "target": "XL Home Out",
-        "value": 1011
-      },
-      {
-        "source": "FMC",
-        "target": "HiFi Out",
-        "value": 1114
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
       }
-    ]
+    },
+    "citywide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    }
+  },
+
+  "this_week": {
+    "nationwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    },
+    "regionalwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    },
+    "citywide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    }
+  },
+
+  "this_month": {
+    "nationwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [
+            { "name": "Indosat" },
+            { "name": "XL Axiata" },
+            { "name": "XL Home" },
+            { "name": "HiFi" },
+            { "name": "FMC" },
+            { "name": "Indosat Out" },
+            { "name": "XL Axiata Out" },
+            { "name": "XL Home Out" },
+            { "name": "HiFi Out" }
+          ],
+          "links": [
+            { "source": "Indosat", "target": "FMC", "value": 307 },
+            { "source": "XL Axiata", "target": "FMC", "value": 292 },
+            { "source": "XL Home", "target": "FMC", "value": 894 },
+            { "source": "HiFi", "target": "FMC", "value": 1054 },
+            { "source": "FMC", "target": "Indosat Out", "value": 282 },
+            { "source": "FMC", "target": "XL Axiata Out", "value": 241 },
+            { "source": "FMC", "target": "XL Home Out", "value": 1011 },
+            { "source": "FMC", "target": "HiFi Out", "value": 1114 }
+          ]
+        },
+        "connectionType": {
+          "nodes": [
+             { "name": "Mobile Prepaid" },
+            { "name": "Mobile Postpaid" },
+            { "name": "Fiber Internet" },
+            { "name": "Fixed Wireless" },
+            { "name": "FMC" },
+            { "name": "Mobile Prepaid Out" },
+            { "name": "Mobile Postpaid Out" },
+            { "name": "Fiber Internet Out" },
+            { "name": "Fixed Wireless Out" }
+          ],
+          "links": [
+           {
+              "source": "Mobile Prepaid",
+              "target": "FMC",
+              "value": 950
+            },
+            {
+              "source": "Mobile Postpaid",
+              "target": "FMC",
+              "value": 430
+            },
+            {
+              "source": "Fiber Internet",
+              "target": "FMC",
+              "value": 1250
+            },
+            {
+              "source": "Fixed Wireless",
+              "target": "FMC",
+              "value": 560
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Prepaid Out",
+              "value": 870
+            },
+            {
+              "source": "FMC",
+              "target": "Mobile Postpaid Out",
+              "value": 390
+            },
+            {
+              "source": "FMC",
+              "target": "Fiber Internet Out",
+              "value": 1170
+            },
+            {
+              "source": "FMC",
+              "target": "Fixed Wireless Out",
+              "value": 510
+            }
+          ]
+        }
+      },
+
+      "mbb": {
+        "sample": {
+          "nodes": [
+            { "name": "Telkomsel" },
+            { "name": "Indosat" },
+            { "name": "XL Axiata" },
+            { "name": "Tri" },
+            { "name": "MBB" },
+            { "name": "Telkomsel Out" },
+            { "name": "Indosat Out" },
+            { "name": "XL Axiata Out" },
+            { "name": "Tri Out" }
+          ],
+          "links": [
+            { "source": "Telkomsel", "target": "MBB", "value": 1250 },
+            { "source": "Indosat", "target": "MBB", "value": 920 },
+            { "source": "XL Axiata", "target": "MBB", "value": 810 },
+            { "source": "Tri", "target": "MBB", "value": 540 },
+            { "source": "MBB", "target": "Telkomsel Out", "value": 1180 },
+            { "source": "MBB", "target": "Indosat Out", "value": 870 },
+            { "source": "MBB", "target": "XL Axiata Out", "value": 765 },
+            { "source": "MBB", "target": "Tri Out", "value": 505 }
+          ]
+        },
+        "connectionType": {
+          "nodes": [
+                { "name": "Prepaid" },
+        { "name": "Postpaid" },
+        { "name": "Data Package" },
+        { "name": "Internet Only" },
+        { "name": "MBB" },
+        { "name": "Prepaid Out" },
+        { "name": "Postpaid Out" },
+        { "name": "Data Package Out" },
+        { "name": "Internet Only Out" }
+          ],
+          "links": [
+            {
+          "source": "Prepaid",
+          "target": "MBB",
+          "value": 2150
+        },
+        {
+          "source": "Postpaid",
+          "target": "MBB",
+          "value": 620
+        },
+        {
+          "source": "Data Package",
+          "target": "MBB",
+          "value": 1450
+        },
+        {
+          "source": "Internet Only",
+          "target": "MBB",
+          "value": 460
+        },
+        {
+          "source": "MBB",
+          "target": "Prepaid Out",
+          "value": 1980
+        },
+        {
+          "source": "MBB",
+          "target": "Postpaid Out",
+          "value": 540
+        },
+        {
+          "source": "MBB",
+          "target": "Data Package Out",
+          "value": 1310
+        },
+        {
+          "source": "MBB",
+          "target": "Internet Only Out",
+          "value": 390
+        }
+          ]
+        }
+      },
+
+      "fbb": {
+        "sample": {
+          "nodes": [
+            { "name": "IndiHome" },
+            { "name": "Biznet" },
+            { "name": "XL Home" },
+            { "name": "HiFi" },
+            { "name": "FBB" },
+            { "name": "IndiHome Out" },
+            { "name": "Biznet Out" },
+            { "name": "XL Home Out" },
+            { "name": "HiFi Out" }
+          ],
+          "links": [
+            { "source": "IndiHome", "target": "FBB", "value": 1435 },
+            { "source": "Biznet", "target": "FBB", "value": 860 },
+            { "source": "XL Home", "target": "FBB", "value": 690 },
+            { "source": "HiFi", "target": "FBB", "value": 510 },
+            { "source": "FBB", "target": "IndiHome Out", "value": 1360 },
+            { "source": "FBB", "target": "Biznet Out", "value": 815 },
+            { "source": "FBB", "target": "XL Home Out", "value": 655 },
+            { "source": "FBB", "target": "HiFi Out", "value": 482 }
+          ]
+        },
+        "connectionType": {
+          "nodes": [
+                    { "name": "Fiber Optic" },
+        { "name": "Wireless Broadband" },
+        { "name": "Cable Internet" },
+        { "name": "FTTH" },
+        { "name": "FBB" },
+        { "name": "Fiber Optic Out" },
+        { "name": "Wireless Broadband Out" },
+        { "name": "Cable Internet Out" },
+        { "name": "FTTH Out" }
+          ],
+          "links": [
+            {
+          "source": "Fiber Optic",
+          "target": "FBB",
+          "value": 2100
+        },
+        {
+          "source": "Wireless Broadband",
+          "target": "FBB",
+          "value": 540
+        },
+        {
+          "source": "Cable Internet",
+          "target": "FBB",
+          "value": 480
+        },
+        {
+          "source": "FTTH",
+          "target": "FBB",
+          "value": 1400
+        },
+        {
+          "source": "FBB",
+          "target": "Fiber Optic Out",
+          "value": 1980
+        },
+        {
+          "source": "FBB",
+          "target": "Wireless Broadband Out",
+          "value": 490
+        },
+        {
+          "source": "FBB",
+          "target": "Cable Internet Out",
+          "value": 420
+        },
+        {
+          "source": "FBB",
+          "target": "FTTH Out",
+          "value": 1320
+        }
+          ]
+        }
+      }
+    },
+
+    "regionalwide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    },
+
+    "citywide": {
+      "fmc": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "mbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      },
+      "fbb": {
+        "sample": {
+          "nodes": [],
+          "links": []
+        },
+        "connectionType": {
+          "nodes": [],
+          "links": []
+        }
+      }
+    }
   }
+}

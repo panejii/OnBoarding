@@ -1,9 +1,7 @@
-export async function getMigrationData() {
-  const response = await fetch("/api/migrationData");
+export async function getMigrationData({period, region, category, movement}) {
 
-  if (!response.ok) {
-    throw new Error("Failed to fetch migration data");
-  }
+  const params = new URLSearchParams({period,region, category, movement})
+  const response = await fetch(`/api/migrationData?${params.toString()}`)
 
   return response.json();
 }

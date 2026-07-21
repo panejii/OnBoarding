@@ -2,12 +2,6 @@ import ShareItem from "./ShareItem";
 
 const ShareColumn = ({ title, color, data }) => {
     
-    console.log({
-    title,
-    color,
-    data,
-});
-  
     return (
     <div className="h-full rounded-2xl border border-gray-200 overflow-hidden flex flex-col">
 
