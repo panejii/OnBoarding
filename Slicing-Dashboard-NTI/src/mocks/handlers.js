@@ -11,7 +11,7 @@ import regionalData from './data/regionalData.json'
 export const handlers = [
 
   http.get("/api/area-chart", async ({request}) => {
-    await delay(2000);
+    await delay(500);
 
     const url = new URL(request.url)
     const period = url.searchParams.get("period") ?? "this_month"
@@ -25,7 +25,7 @@ export const handlers = [
   
 
   http.get("/api/fbb-data", async ({request}) => {
-    await delay(1500);
+    await delay(500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -37,7 +37,7 @@ export const handlers = [
   }),
 
   http.get("/api/mbb-data", async ({ request }) => {
-    await delay(2260);
+    await delay(500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -49,19 +49,19 @@ export const handlers = [
   }),
 
   http.get("/api/competitorData", async ({request}) => {
-    await delay(1000);
+    await delay(500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
     const region = url.searchParams.get("region") ?? "nationwide";
 
     const result = competitorData?.[period]?.[region] ?? [];
-    
+
     return HttpResponse.json(result);
   }),
 
   http.get("/api/competitorSummaryData", async ({request}) => {
-    await delay(1500);
+    await delay(500);
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
     const region = url.searchParams.get("region") ?? "nationwide";
@@ -72,12 +72,12 @@ export const handlers = [
   }),
 
   http.get("/api/migrationData", async () => {
-    await delay(2000);
+    await delay(500);
     return HttpResponse.json(migrationData);
   }),
 
   http.get("/api/regionalData", async () => {
-    await delay(3000);
+    await delay(500);
     return HttpResponse.json(regionalData);
   }),
 

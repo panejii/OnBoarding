@@ -1,27 +1,20 @@
-import React from 'react'
+import {useState} from 'react'
 import {House, ClipboardList, Files, Mail, Bolt} from 'lucide-react'
 import iconTelkomsel from '../assets/iconTelkomsel.png'
 
-const IconButton = ({ children, onClick }) => {
-    return (
-        <button
-            onClick={onClick}
-            className="
-                px-1
-                py-1
-                rounded-xl
-                hover:bg-zinc-200
-                duration-300
-            "
-        >
-            {children}
-        </button>
-    );
-};
-
+const menus = [
+  { id: "home", icon: House },
+  { id: "report", icon: ClipboardList },
+  { id: "files", icon: Files },
+  { id: "mail", icon: Mail },
+  { id: "setting", icon: Bolt },
+];
 
 const Sidebar = () => {
-  return (
+
+    const [active, setActive] = useState("home");
+
+    return (
     <>
         <div className='fixed left-0 top-0 h-screen w-8 lg:w-10 xl:w-12 2xl:w-14 bg-white  flex flex-col items-center py-3'>
             {/* Logo Telkomsel */}
@@ -32,22 +25,45 @@ const Sidebar = () => {
             <p className='text-[6px] lg:text-[7px] xl:text-[8px] 2xl:text-[9px] text-zinc-500'>Main</p>
             
             {/* Sidebar Menu */}
-            <div className='flex flex-col items-center gap-0.5 '>
-                <button className='px-1 py-1 lg:px-1.5 lg:py-1.5 xl:px-2 xl:py-2 rounded-xl hover:bg-zinc-200 duration-300 '>
-                    <House color='#525252' size={12}></House>
-                </button>
-                <button className='px-1 py-1 lg:px-1.5 lg:py-1.5 xl:px-2 xl:py-2 rounded-xl hover:bg-zinc-200 duration-300'>
-                    <ClipboardList color='#525252' size={12}></ClipboardList>
-                </button>
-                <button className='px-1 py-1 lg:px-1.5 lg:py-1.5 xl:px-2 xl:py-2 rounded-xl hover:bg-zinc-200 duration-300'>
-                    <Files color='#525252' size={12}></Files>
-                </button>
-                <button className='px-1 py-1 lg:px-1.5 lg:py-1.5 xl:px-2 xl:py-2 rounded-xl hover:bg-zinc-200 duration-300'>
-                    <Mail color='#525252' size={12}></Mail>
-                </button>
-                <button className='px-1 py-1 lg:px-1.5 lg:py-1.5 xl:px-2 xl:py-2 rounded-xl hover:bg-zinc-200 duration-300'>
-                    <Bolt color='#525252' size={12}></Bolt>
-                </button>
+            <div className="flex flex-col items-center gap-1">
+                {menus.map((menu) => {
+                const Icon = menu.icon;
+                const isActive = active === menu.id;
+
+                return (
+                    <button
+                    key={menu.id}
+                    onClick={() => setActive(menu.id)}
+                    className={`
+                        flex items-center justify-center
+                        w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7
+                        rounded-lg
+                        transition-all duration-300
+
+                        ${
+                        isActive
+                            ? `
+                            bg-gradient-to-b
+                            from-blue-400
+                            to-blue-700
+                            shadow-[0_0_15px_rgba(59,130,246,.6)]
+                            ring-2
+                            ring-blue-300
+                            `
+                            : `
+                            hover:bg-zinc-100
+                            `
+                        }
+                    `}
+                    >
+                    <Icon
+                        size={12}
+                        color={isActive ? "white" : "#64748b"}
+                        strokeWidth={2.3}
+                    />
+                    </button>
+                );
+                })}
             </div>
         </div>
     </>
