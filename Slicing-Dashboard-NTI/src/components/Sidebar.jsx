@@ -43,7 +43,7 @@ const Sidebar = () => {
                         ${
                         isActive
                             ? `
-                            bg-gradient-to-b
+                            bg-linear-to-b
                             from-blue-400
                             to-blue-700
                             shadow-[0_0_15px_rgba(59,130,246,.6)]

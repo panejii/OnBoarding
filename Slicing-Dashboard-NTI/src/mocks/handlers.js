@@ -30,8 +30,9 @@ export const handlers = [
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
     const region = url.searchParams.get("region") ?? "nationwide";
+    const source = url.searchParams.get("source") ?? "meta";
 
-    const result = fbbData?.[period]?.[region] ?? [];
+    const result = fbbData?.[period]?.[source]?.[region] ?? [];
 
     return HttpResponse.json(result);
   }),
@@ -41,9 +42,10 @@ export const handlers = [
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
+    const source = url.searchParams.get("source") ?? "meta"
     const region = url.searchParams.get("region") ?? "nationwide";
 
-    const result = mbbData?.[period]?.[region] ?? [];
+    const result = mbbData?.[period]?.[source]?.[region] ?? [];
 
     return HttpResponse.json(result);
   }),

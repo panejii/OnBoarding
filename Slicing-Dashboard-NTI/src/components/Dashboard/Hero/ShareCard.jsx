@@ -11,15 +11,15 @@ import { useFilterStore } from '../../../store/useFilterStore'
 
 const ShareCard = () => {
 
-  const {period, region} = useFilterStore()
+  const {period, source, region, setSource} = useFilterStore()
 
   const {
     data: mbbData = [],
     isLoading: isLoadingMbb,
     isError: isErrorMbb,
   } = useQuery({
-    queryKey: ["mbbData", period, region],
-    queryFn: () => getMbbData({period,region}),
+    queryKey: ["mbbData", period, source, region],
+    queryFn: () => getMbbData({period, source, region}),
   });
 
   const {
@@ -27,8 +27,8 @@ const ShareCard = () => {
     isLoading: isLoadingFbb,
     isError: isErrorFbb,
   } = useQuery({
-    queryKey: ["fbbData", period, region],
-    queryFn: () => getFbbData({period,region}),
+    queryKey: ["fbbData", period, source, region],
+    queryFn: () => getFbbData({period, source, region}),
   });
 
   const isLoading = isLoadingMbb || isLoadingFbb;
@@ -55,9 +55,13 @@ const ShareCard = () => {
         {/* Statis: judul & selector, tidak bergantung fetch apapun, selalu tampil */}
         <div className='flex justify-between items-center mt-2'>
           <h1 className='text-xs lg:text-sm xl:text-base 2xl:text-lg font-semibold'>FBB&MBB Share</h1>
-          <select className='bg-slate-100 rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300 text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs'>
-            <option value="">Meta</option>
-            <option value="">Non-Meta</option>
+          <select 
+          value={source}
+          onChange= {(e) => setSource(e.target.value)}
+          className='bg-slate-100 rounded-2xl py-1 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300 text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-xs'>
+            <option value="meta">Meta</option>
+            <option value="ookla">Ookla</option>
+            <option value="onx">ONX</option>
           </select>
         </div>
 
