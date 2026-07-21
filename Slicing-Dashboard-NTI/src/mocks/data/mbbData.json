@@ -1,26 +1,246 @@
-[
-  {
-    "id": 1,
-    "provider": "Telkomsel",
-    "logo": "telkomsel",
-    "percentage": 32.53,
-    "growth": -6.4,
-    "sparkline": [28, 24, 20, 25, 18, 15]
+{
+  "today": {
+    "nationwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 33.12,
+        "growth": -0.9,
+        "sparkline": [17, 17, 16, 16, 16, 15]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 31.84,
+        "growth": 0.8,
+        "sparkline": [26, 26, 27, 27, 28, 28]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 30.67,
+        "growth": 0.6,
+        "sparkline": [25, 25, 26, 26, 27, 27]
+      }
+    ],
+    "regionalwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 30.41,
+        "growth": -0.7,
+        "sparkline": [16, 16, 16, 15, 15, 15]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 29.52,
+        "growth": 0.6,
+        "sparkline": [24, 25, 25, 26, 26, 27]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 28.73,
+        "growth": 0.5,
+        "sparkline": [23, 23, 24, 24, 25, 26]
+      }
+    ],
+    "citywide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 28.92,
+        "growth": -0.5,
+        "sparkline": [15, 15, 15, 15, 14, 14]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 27.84,
+        "growth": 0.4,
+        "sparkline": [22, 22, 23, 23, 24, 24]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 27.03,
+        "growth": 0.3,
+        "sparkline": [21, 21, 22, 22, 23, 23]
+      }
+    ]
   },
-  {
-    "id": 2,
-    "provider": "Indosat",
-    "logo": "indosat",
-    "percentage": 31.21,
-    "growth": 6.4,
-    "sparkline": [18, 20, 24, 22, 25, 28]
+
+  "thisWeek": {
+    "nationwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 32.91,
+        "growth": -3.2,
+        "sparkline": [24, 22, 21, 19, 17, 15]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 31.43,
+        "growth": 3.8,
+        "sparkline": [20, 21, 22, 24, 26, 28]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 30.84,
+        "growth": 3.1,
+        "sparkline": [17, 18, 20, 22, 24, 26]
+      }
+    ],
+    "regionalwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 30.62,
+        "growth": -2.6,
+        "sparkline": [23, 21, 20, 18, 17, 16]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 29.35,
+        "growth": 3.2,
+        "sparkline": [18, 19, 20, 22, 24, 25]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 28.44,
+        "growth": 2.8,
+        "sparkline": [16, 17, 19, 20, 22, 24]
+      }
+    ],
+    "citywide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 28.83,
+        "growth": -2.1,
+        "sparkline": [21, 20, 19, 17, 16, 15]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 27.92,
+        "growth": 2.7,
+        "sparkline": [17, 18, 19, 20, 22, 23]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 27.21,
+        "growth": 2.4,
+        "sparkline": [15, 16, 17, 19, 20, 22]
+      }
+    ]
   },
-  {
-    "id": 3,
-    "provider": "XL Axiata",
-    "logo": "xl",
-    "percentage": 31.21,
-    "growth": 6.4,
-    "sparkline": [15, 19, 22, 21, 24, 27]
+
+  "thisMonth": {
+    "nationwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 32.53,
+        "growth": -6.4,
+        "sparkline": [28, 24, 20, 25, 18, 15]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 31.21,
+        "growth": 6.4,
+        "sparkline": [18, 20, 24, 22, 25, 28]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 31.21,
+        "growth": 6.4,
+        "sparkline": [15, 19, 22, 21, 24, 27]
+      }
+    ],
+
+    "regionalwide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 29.84,
+        "growth": -5.2,
+        "sparkline": [26, 23, 19, 22, 17, 14]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 28.73,
+        "growth": 5.3,
+        "sparkline": [17, 19, 22, 21, 23, 26]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 27.61,
+        "growth": 5.1,
+        "sparkline": [14, 17, 20, 20, 22, 25]
+      }
+    ],
+
+    "citywide": [
+      {
+        "id": 1,
+        "provider": "Telkomsel",
+        "logo": "telkomsel",
+        "percentage": 27.43,
+        "growth": -4.3,
+        "sparkline": [24, 21, 18, 20, 16, 13]
+      },
+      {
+        "id": 2,
+        "provider": "Indosat",
+        "logo": "indosat",
+        "percentage": 26.54,
+        "growth": 4.4,
+        "sparkline": [16, 18, 20, 20, 22, 24]
+      },
+      {
+        "id": 3,
+        "provider": "XL Axiata",
+        "logo": "xl",
+        "percentage": 25.87,
+        "growth": 4.1,
+        "sparkline": [13, 16, 18, 19, 21, 23]
+      }
+    ]
   }
-]
+}

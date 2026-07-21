@@ -1,38 +1,248 @@
-[
-  {
-    "date": "06/05",
-    "telkomsel": 20,
-    "indosat": 12,
-    "xl": 8
+{
+  "today": {
+    "nationwide": [
+      {
+        "date": "18/05",
+        "telkomsel": 28,
+        "indosat": 14,
+        "xl": 36
+      }
+    ],
+    "regionalwide": [
+      {
+        "date": "18/05",
+        "telkomsel": 25,
+        "indosat": 12,
+        "xl": 31
+      }
+    ],
+    "citywide": [
+      {
+        "date": "18/05",
+        "telkomsel": 22,
+        "indosat": 10,
+        "xl": 28
+      }
+    ]
   },
-  {
-    "date": "12/05",
-    "telkomsel": 34,
-    "indosat": 21,
-    "xl": 15
+
+  "thisWeek": {
+    "nationwide": [
+      {
+        "date": "12/05",
+        "telkomsel": 34,
+        "indosat": 21,
+        "xl": 15
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 18,
+        "indosat": 12,
+        "xl": 9
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 42,
+        "indosat": 25,
+        "xl": 31
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 11,
+        "indosat": 8,
+        "xl": 5
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 28,
+        "indosat": 14,
+        "xl": 36
+      }
+    ],
+
+    "regionalwide": [
+      {
+        "date": "12/05",
+        "telkomsel": 31,
+        "indosat": 18,
+        "xl": 13
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 16,
+        "indosat": 10,
+        "xl": 8
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 38,
+        "indosat": 22,
+        "xl": 27
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 10,
+        "indosat": 7,
+        "xl": 4
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 25,
+        "indosat": 12,
+        "xl": 31
+      }
+    ],
+
+    "citywide": [
+      {
+        "date": "12/05",
+        "telkomsel": 28,
+        "indosat": 16,
+        "xl": 11
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 14,
+        "indosat": 9,
+        "xl": 7
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 35,
+        "indosat": 20,
+        "xl": 24
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 9,
+        "indosat": 6,
+        "xl": 4
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 22,
+        "indosat": 10,
+        "xl": 28
+      }
+    ]
   },
-  {
-    "date": "13/05",
-    "telkomsel": 18,
-    "indosat": 12,
-    "xl": 9
-  },
-  {
-    "date": "14/05",
-    "telkomsel": 42,
-    "indosat": 25,
-    "xl": 31
-  },
-  {
-    "date": "15/05",
-    "telkomsel": 11,
-    "indosat": 8,
-    "xl": 5
-  },
-  {
-    "date": "18/05",
-    "telkomsel": 28,
-    "indosat": 14,
-    "xl": 36
+
+  "thisMonth": {
+    "nationwide": [
+      {
+        "date": "06/05",
+        "telkomsel": 20,
+        "indosat": 12,
+        "xl": 8
+      },
+      {
+        "date": "12/05",
+        "telkomsel": 34,
+        "indosat": 21,
+        "xl": 15
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 18,
+        "indosat": 12,
+        "xl": 9
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 42,
+        "indosat": 25,
+        "xl": 31
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 11,
+        "indosat": 8,
+        "xl": 5
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 28,
+        "indosat": 14,
+        "xl": 36
+      }
+    ],
+
+    "regionalwide": [
+      {
+        "date": "06/05",
+        "telkomsel": 18,
+        "indosat": 10,
+        "xl": 7
+      },
+      {
+        "date": "12/05",
+        "telkomsel": 31,
+        "indosat": 18,
+        "xl": 13
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 16,
+        "indosat": 10,
+        "xl": 8
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 38,
+        "indosat": 22,
+        "xl": 27
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 10,
+        "indosat": 7,
+        "xl": 4
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 25,
+        "indosat": 12,
+        "xl": 31
+      }
+    ],
+
+    "citywide": [
+      {
+        "date": "06/05",
+        "telkomsel": 16,
+        "indosat": 9,
+        "xl": 6
+      },
+      {
+        "date": "12/05",
+        "telkomsel": 28,
+        "indosat": 16,
+        "xl": 11
+      },
+      {
+        "date": "13/05",
+        "telkomsel": 14,
+        "indosat": 9,
+        "xl": 7
+      },
+      {
+        "date": "14/05",
+        "telkomsel": 35,
+        "indosat": 20,
+        "xl": 24
+      },
+      {
+        "date": "15/05",
+        "telkomsel": 9,
+        "indosat": 6,
+        "xl": 4
+      },
+      {
+        "date": "18/05",
+        "telkomsel": 22,
+        "indosat": 10,
+        "xl": 28
+      }
+    ]
   }
-]
+}
