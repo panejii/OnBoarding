@@ -3,6 +3,7 @@ import iconTelkomsel from "../../../assets/iconTelkomsel.png";
 import { UserRound } from "lucide-react";
 
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 
 import { getAreaChart } from "../../../services/areaChartService";
 import {
@@ -14,13 +15,17 @@ import {
 import ErrorState from "../../ErrorState";
 
 const StatisticCard = () => {
+
+  const [period, setPeriod] = useState("this_week");
+  const [region, setRegion] = useState("nationwide");
+
   const {
     data: chartData = [],
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ["areaChart"],
-    queryFn: getAreaChart,
+    queryKey: ["areaChart", period, region],
+    queryFn: () => getAreaChart({period,region}),
   });
 
   return (

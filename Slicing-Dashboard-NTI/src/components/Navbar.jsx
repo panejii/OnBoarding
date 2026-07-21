@@ -21,7 +21,7 @@ const Navbar = () => {
 
             {/* Dropdown */}
             <div className=' flex items-center gap-3 text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm '>
-                <select value={Granularity} onChange={onChange} oncl className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
+                <select value={Granularity} onChange={onChange} className='bg-slate-100 rounded-2xl py-1 lg:py-1.5 xl:py-2 pl-3 pr-9 border border-slate-200 hover:bg-slate-300 duration-300'>
                     <option value="this_month">This Month</option>
                     <option value="this_week">This Week</option>
                     <option value="today">Today</option>

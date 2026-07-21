@@ -64,7 +64,7 @@
     ]
   },
 
-  "thisWeek": {
+  "this_week": {
     "nationwide": [
       {
         "id": 1,
@@ -129,7 +129,7 @@
     ]
   },
 
-  "thisMonth": {
+  "this_month": {
     "nationwide": [
       {
         "id": 1,

@@ -15,12 +15,14 @@ export const handlers = [
 
     const url = new URL(request.url)
     const period = url.searchParams.get("period") ?? "this_month"
-    const region = url.searchParams.get("region") ?? "nationWide"
+    const region = url.searchParams.get("region") ?? "nationwide"
 
     const result = areaChartData?.[period]?.[region] ?? []
     
     return HttpResponse.json(result);
   }),
+
+  
 
   http.get("/api/fbb-data", async ({request}) => {
     await delay(1500);
@@ -54,7 +56,7 @@ export const handlers = [
     const region = url.searchParams.get("region") ?? "nationwide";
 
     const result = competitorData?.[period]?.[region] ?? [];
-
+    
     return HttpResponse.json(result);
   }),
 

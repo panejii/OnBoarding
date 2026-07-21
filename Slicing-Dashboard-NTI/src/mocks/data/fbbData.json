@@ -82,7 +82,7 @@
     ]
   },
 
-  "thisWeek": {
+  "this_week": {
     "nationwide": [
       {
         "id": 1,
@@ -114,7 +114,7 @@
     "citywide": []
   },
 
-  "thisMonth": {
+  "this_month": {
     "nationwide": [
       {
         "id": 1,

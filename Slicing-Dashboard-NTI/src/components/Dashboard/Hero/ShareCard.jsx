@@ -1,6 +1,7 @@
 import ShareColumn from './ShareColumn'
 
 import { useQuery } from '@tanstack/react-query'
+import { useState } from 'react'
 
 import { getMbbData } from '../../../services/mbbService'
 import { getFbbData } from '../../../services/fbbService'
@@ -9,13 +10,16 @@ import ErrorState from '../../ErrorState'
 
 const ShareCard = () => {
 
+  const [period, setPeriod] = useState("this_month");
+  const [region, setRegion] = useState("nationwide");
+
   const {
     data: mbbData = [],
     isLoading: isLoadingMbb,
     isError: isErrorMbb,
   } = useQuery({
-    queryKey: ["mbbData"],
-    queryFn: getMbbData,
+    queryKey: ["mbbData", period, region],
+    queryFn: () => getMbbData({period,region}),
   });
 
   const {
@@ -23,8 +27,8 @@ const ShareCard = () => {
     isLoading: isLoadingFbb,
     isError: isErrorFbb,
   } = useQuery({
-    queryKey: ["fbbData"],
-    queryFn: getFbbData,
+    queryKey: ["fbbData", period, region],
+    queryFn: () => getFbbData({period,region}),
   });
 
   const isLoading = isLoadingMbb || isLoadingFbb;

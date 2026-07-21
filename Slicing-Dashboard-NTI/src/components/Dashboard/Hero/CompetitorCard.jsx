@@ -2,6 +2,7 @@ import CompetitorSummary from "./CompetitorSummary";
 import GroupBarChart from "./Charts/GroupBarChart";
 
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 
 import { getCompetitor, getCompetitorSummary } from "../../../services/competitorService";
 import { AnimatedCard, SkeletonBox, SkeletonChart, SkeletonText } from "../../../animation";
@@ -9,13 +10,16 @@ import ErrorState from "../../ErrorState";
 
 const CompetitorCard = () => {
 
+  const [period, setPeriod] = useState("this_month");
+  const [region, setRegion] = useState("nationwide");
+
   const {
     data: competitorSummaryData = [],
     isLoading: isLoadingSummary,
     isError: isErrorSummary,
   } = useQuery({
-    queryKey: ["competitorSummary"],
-    queryFn: getCompetitorSummary,
+    queryKey: ["competitorSummary", period, region],
+    queryFn: () => getCompetitorSummary({period, region}),
   });
 
   const {
@@ -23,8 +27,8 @@ const CompetitorCard = () => {
     isLoading: isLoadingCompetitor,
     isError: isErrorCompetitor,
   } = useQuery({
-    queryKey: ["competitor"],
-    queryFn: getCompetitor,
+    queryKey: ["competitor", period, region],
+    queryFn: ()=> getCompetitor({period, region}),
   });
 
   const isLoading = isLoadingSummary || isLoadingCompetitor;
