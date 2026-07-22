@@ -5,9 +5,17 @@ import {
   MoveDown,
 } from "lucide-react";
 
-const PopupInfo = () => {
+const statusClass = (status) => {
+  if (status === "Critical") return "text-red-500 bg-red-100";
+  if (status === "Warning") return "text-yellow-600 bg-yellow-100";
+  return "text-green-600 bg-green-100";
+};
+
+const PopupInfo = ({ data }) => {
   const iconClass =
     "w-2 h-2 lg:w-2.5 lg:h-2.5 xl:w-2.5 xl:h-2.5 2xl:w-[9px] 2xl:h-[9px]";
+
+  if (!data) return null;
 
   return (
     <div
@@ -31,7 +39,7 @@ const PopupInfo = () => {
           2xl:text-[10px]
         "
       >
-        DKI JAKARTA
+        {data.title}
       </h3>
 
       <div
@@ -47,25 +55,26 @@ const PopupInfo = () => {
             <span className="text-[6px] 2xl:text-[8px]">FBB</span>
 
             <span
-              className="
-                text-red-500 bg-red-100 rounded-xl px-1
+              className={`
+                rounded-xl px-1
                 lg:px-1.5 2xl:px-2
                 text-[6px] lg:text-[7px] 2xl:text-[8px]
-              "
+                ${statusClass(data.fbb?.status)}
+              `}
             >
-              Critical
+              {data.fbb?.status ?? "-"}
             </span>
           </div>
 
           <div className="flex gap-1 2xl:gap-3 mt-1">
             <p className="text-gray-500 flex items-center gap-1 text-[6px] 2xl:text-[8px]">
               <Users className={iconClass} />
-              123.32k
+              {data.fbb?.users ?? "-"}
             </p>
 
             <p className="text-gray-500 flex items-center gap-1 text-[5px] 2xl:text-[8px]">
               <MessageCircleWarning className={iconClass} />
-              Poor RSSI
+              {data.fbb?.issue ?? "-"}
             </p>
           </div>
         </div>
@@ -76,25 +85,26 @@ const PopupInfo = () => {
             <span className="text-[6px] 2xl:text-[8px]">MBB</span>
 
             <span
-              className="
-                text-red-500 bg-red-100 rounded-xl px-1
+              className={`
+                rounded-xl px-1
                 lg:px-1.5 2xl:px-2
                 text-[6px] lg:text-[7px] 2xl:text-[8px]
-              "
+                ${statusClass(data.mbb?.status)}
+              `}
             >
-              Critical
+              {data.mbb?.status ?? "-"}
             </span>
           </div>
 
           <div className="flex flex-col gap-1 mt-1">
             <p className="text-gray-500 flex items-center gap-1 text-[6px] 2xl:text-[8px]">
               <Users className={iconClass} />
-              123.32k
+              {data.mbb?.users ?? "-"}
             </p>
 
             <p className="text-gray-500 flex items-center gap-1 text-[6px] 2xl:text-[8px]">
               <MessageCircleWarning className={iconClass} />
-              Poor RSSI
+              {data.mbb?.issue ?? "-"}
             </p>
 
             <p className="text-red-500 flex items-center gap-1 text-[6px] 2xl:text-[8px]">
@@ -107,9 +117,9 @@ const PopupInfo = () => {
                   text-red-500
                 "
               />
-              6.4 Mbps
+              {data.mbb?.speed ?? "-"} Mbps
               <span className="text-gray-500 text-[6px] 2xl:text-[8px]">
-                (2%)
+                ({data.mbb?.speedPercent ?? "-"}%)
               </span>
             </p>
           </div>
