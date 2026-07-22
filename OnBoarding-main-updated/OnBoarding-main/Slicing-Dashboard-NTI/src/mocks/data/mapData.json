@@ -1,0 +1,767 @@
+[
+  {
+    "period": "today",
+    "region": "nationwide",
+    "popup": {
+      "title": "INDONESIA",
+      "fbb": {
+        "status": "Critical",
+        "users": "104.82k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Critical",
+        "users": "104.82k",
+        "issue": "Poor RSRP",
+        "speed": 5.4,
+        "speedPercent": 1.7
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "NTW-007",
+          "users": "85.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "NTW-014",
+          "users": "76.50k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "NTW-021",
+          "users": "68.00k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "NTW-028",
+          "users": "59.50k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "NTW-035",
+          "users": "51.00k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "68.00k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "61.20k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "54.40k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "47.60k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "40.80k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "today",
+    "region": "regionalwide",
+    "popup": {
+      "title": "JAWA",
+      "fbb": {
+        "status": "Warning",
+        "users": "62.89k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Warning",
+        "users": "62.89k",
+        "issue": "Poor RSRP",
+        "speed": 3.3,
+        "speedPercent": 1.0
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JBR-007",
+          "users": "51.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JBR-014",
+          "users": "45.90k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JBR-021",
+          "users": "40.80k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JBR-028",
+          "users": "35.70k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JBR-035",
+          "users": "30.60k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "40.80k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "36.72k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "32.64k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "28.56k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "24.48k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "today",
+    "region": "citywide",
+    "popup": {
+      "title": "DKI JAKARTA",
+      "fbb": {
+        "status": "Good",
+        "users": "33.54k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Good",
+        "users": "33.54k",
+        "issue": "Poor RSRP",
+        "speed": 1.7,
+        "speedPercent": 0.5
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JKT-KBY-007",
+          "users": "27.20k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JKT-KBY-014",
+          "users": "24.48k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JKT-KBY-021",
+          "users": "21.76k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JKT-KBY-028",
+          "users": "19.04k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JKT-KBY-035",
+          "users": "16.32k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "21.76k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "19.58k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "17.41k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "15.23k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "13.06k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_week",
+    "region": "nationwide",
+    "popup": {
+      "title": "INDONESIA",
+      "fbb": {
+        "status": "Critical",
+        "users": "123.32k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Critical",
+        "users": "123.32k",
+        "issue": "Poor RSRP",
+        "speed": 6.4,
+        "speedPercent": 2.0
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "NTW-007",
+          "users": "100.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "NTW-014",
+          "users": "90.00k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "NTW-021",
+          "users": "80.00k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "NTW-028",
+          "users": "70.00k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "NTW-035",
+          "users": "60.00k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "80.00k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "72.00k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "64.00k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "56.00k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "48.00k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_week",
+    "region": "regionalwide",
+    "popup": {
+      "title": "JAWA",
+      "fbb": {
+        "status": "Warning",
+        "users": "73.99k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Warning",
+        "users": "73.99k",
+        "issue": "Poor RSRP",
+        "speed": 3.8,
+        "speedPercent": 1.2
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JBR-007",
+          "users": "60.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JBR-014",
+          "users": "54.00k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JBR-021",
+          "users": "48.00k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JBR-028",
+          "users": "42.00k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JBR-035",
+          "users": "36.00k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "48.00k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "43.20k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "38.40k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "33.60k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "28.80k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_week",
+    "region": "citywide",
+    "popup": {
+      "title": "DKI JAKARTA",
+      "fbb": {
+        "status": "Good",
+        "users": "39.46k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Good",
+        "users": "39.46k",
+        "issue": "Poor RSRP",
+        "speed": 2.0,
+        "speedPercent": 0.6
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JKT-KBY-007",
+          "users": "32.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JKT-KBY-014",
+          "users": "28.80k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JKT-KBY-021",
+          "users": "25.60k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JKT-KBY-028",
+          "users": "22.40k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JKT-KBY-035",
+          "users": "19.20k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "25.60k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "23.04k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "20.48k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "17.92k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "15.36k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_month",
+    "region": "nationwide",
+    "popup": {
+      "title": "INDONESIA",
+      "fbb": {
+        "status": "Critical",
+        "users": "141.82k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Critical",
+        "users": "141.82k",
+        "issue": "Poor RSRP",
+        "speed": 7.4,
+        "speedPercent": 2.3
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "NTW-007",
+          "users": "115.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "NTW-014",
+          "users": "103.50k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "NTW-021",
+          "users": "92.00k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "NTW-028",
+          "users": "80.50k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "NTW-035",
+          "users": "69.00k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "92.00k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "82.80k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "73.60k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "64.40k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "55.20k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_month",
+    "region": "regionalwide",
+    "popup": {
+      "title": "JAWA",
+      "fbb": {
+        "status": "Warning",
+        "users": "85.09k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Warning",
+        "users": "85.09k",
+        "issue": "Poor RSRP",
+        "speed": 4.4,
+        "speedPercent": 1.4
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JBR-007",
+          "users": "69.00k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JBR-014",
+          "users": "62.10k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JBR-021",
+          "users": "55.20k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JBR-028",
+          "users": "48.30k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JBR-035",
+          "users": "41.40k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "55.20k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "49.68k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "44.16k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "38.64k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "33.12k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  },
+  {
+    "period": "this_month",
+    "region": "citywide",
+    "popup": {
+      "title": "DKI JAKARTA",
+      "fbb": {
+        "status": "Warning",
+        "users": "45.38k",
+        "issue": "Poor RSSI"
+      },
+      "mbb": {
+        "status": "Warning",
+        "users": "45.38k",
+        "issue": "Poor RSRP",
+        "speed": 2.4,
+        "speedPercent": 0.7
+      }
+    },
+    "grids": {
+      "mostConcern": [
+        {
+          "rank": 1,
+          "code": "JKT-KBY-007",
+          "users": "36.80k",
+          "issue": "Poor RSRP"
+        },
+        {
+          "rank": 2,
+          "code": "JKT-KBY-014",
+          "users": "33.12k",
+          "issue": "Poor RSSI"
+        },
+        {
+          "rank": 3,
+          "code": "JKT-KBY-021",
+          "users": "29.44k",
+          "issue": "High Latency"
+        },
+        {
+          "rank": 4,
+          "code": "JKT-KBY-028",
+          "users": "25.76k",
+          "issue": "Cell Congestion"
+        },
+        {
+          "rank": 5,
+          "code": "JKT-KBY-035",
+          "users": "22.08k",
+          "issue": "Poor SINR"
+        }
+      ],
+      "problemDevice": [
+        {
+          "rank": 1,
+          "code": "DEV-011",
+          "users": "29.44k",
+          "issue": "Modem Faulty"
+        },
+        {
+          "rank": 2,
+          "code": "DEV-022",
+          "users": "26.50k",
+          "issue": "ONT Offline"
+        },
+        {
+          "rank": 3,
+          "code": "DEV-033",
+          "users": "23.55k",
+          "issue": "Weak Signal"
+        },
+        {
+          "rank": 4,
+          "code": "DEV-044",
+          "users": "20.61k",
+          "issue": "Firmware Outdated"
+        },
+        {
+          "rank": 5,
+          "code": "DEV-055",
+          "users": "17.66k",
+          "issue": "Overheating"
+        }
+      ]
+    }
+  }
+]

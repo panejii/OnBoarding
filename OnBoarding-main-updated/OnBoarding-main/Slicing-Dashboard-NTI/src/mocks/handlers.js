@@ -6,6 +6,7 @@ import fbbData from './data/fbbData.json'
 import mbbData from './data/mbbData.json'
 import migrationData from './data/migrationData.json'
 import regionalData from './data/regionalData.json'
+import mapData from './data/mapData.json'
 
 function periodToRange(period) {
   const end = new Date("2026-08-21");
@@ -239,6 +240,25 @@ export const handlers = [
       status: true,
       data: result ?? null,
       message: "Regional data retrieved successfully.",
+      pagination: null,
+    });
+  }),
+
+  http.get("/api/mapData", async ({ request }) => {
+    await delay(500);
+
+    const url = new URL(request.url);
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = url.searchParams.get("region") ?? "nationwide";
+
+    const result = mapData.find(
+      (row) => row.period === period && row.region === region
+    );
+
+    return HttpResponse.json({
+      status: true,
+      data: result ?? null,
+      message: "Map data retrieved successfully.",
       pagination: null,
     });
   }),
