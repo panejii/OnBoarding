@@ -211,8 +211,6 @@ export const handlers = [
 
     const result = migrationData.find(
       (row) =>
-        row.period === period &&
-        row.region === region &&
         row.category === category &&
         row.movement === movement
     );
