@@ -2,7 +2,6 @@ import { http, HttpResponse, delay } from "msw";
 
 import areaChartData from "./data/areaChartData.json";
 import competitorData from './data/competitorData.json'
-import competitorSummary from './data/competitorSummary.json'
 import fbbData from './data/fbbData.json'
 import mbbData from './data/mbbData.json'
 import migrationData from './data/migrationData.json'
@@ -199,18 +198,30 @@ export const handlers = [
     });
   }),
 
-  http.get("/api/migrationData", async ({request}) => {
+  http.get("/api/migrationData", async ({ request }) => {
     await delay(500);
 
-    const url = new URL(request.url)
-    const period = url.searchParams.get("period") ?? "this_month"
-    const region = url.searchParams.get("region") ?? "nationwide"
-    const category = url.searchParams.get("category") ?? "fmc"
-    const movement = url.searchParams.get("movement") ?? "sample"
+    const url = new URL(request.url);
 
-    const result = migrationData?.[period]?.[region]?.[category]?.[movement] ?? []
+    const period = url.searchParams.get("period") ?? "this_month";
+    const region = (url.searchParams.get("region") ?? "nationwide").toUpperCase();
+    const category = url.searchParams.get("category") ?? "fmc";
+    const movement = url.searchParams.get("movement") ?? "sample";
 
-    return HttpResponse.json(result);
+    const result = migrationData.find(
+      (row) =>
+        row.period === period &&
+        row.region === region &&
+        row.category === category &&
+        row.movement === movement
+    );
+
+    return HttpResponse.json({
+      status: true,
+      data: result ?? { nodes: [], links: [] },
+      message: "Migration data retrieved successfully.",
+      pagination: null,
+    });
   }),
 
   http.get("/api/regionalData", async () => {
