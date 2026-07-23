@@ -35,10 +35,8 @@ export default function Map({ onLoad }) {
             map.remove()
             mapRef.current = null
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    // Saat region berubah (nationwide/regionalwide/citywide), map yang sudah ada digeser & di-zoom ke viewport region baru, bukan dibuat ulang.
     useEffect(() => {
         if (!mapRef.current) return
         const { center, zoom } = getMapViewport(region)
