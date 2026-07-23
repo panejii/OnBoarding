@@ -2,10 +2,6 @@ import AreaChart from "../Hero/Charts/AreaCharts";
 import iconTelkomsel from "../../../assets/iconTelkomsel.png";
 import { UserRound } from "lucide-react";
 
-import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
-
-import { getAreaChart } from "../../../services/areaChartService";
 import {
   AnimatedCard,
   SkeletonHeaderStat,
@@ -16,6 +12,8 @@ import ErrorState from "../../ErrorState";
 
 import { useFilterStore } from "../../../store/useFilterStore";
 
+import { useStatisticData } from "../../../hooks/useStatisticData";
+
 const StatisticCard = () => {
 
   const {period, region} = useFilterStore()
@@ -24,10 +22,7 @@ const StatisticCard = () => {
     data: chartData = [],
     isLoading,
     isError,
-  } = useQuery({
-    queryKey: ["areaChart", period, region],
-    queryFn: () => getAreaChart({period,region}),
-  });
+  } = useStatisticData({period,region})
 
   return (
     <div className="flex flex-col rounded-2xl bg-white p-2 lg:p-3 xl:p-4 2xl:p-5 shadow-sm h-full">

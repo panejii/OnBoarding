@@ -1,13 +1,10 @@
 import ShareColumn from './ShareColumn'
 
-import { useQuery } from '@tanstack/react-query'
-import { useState } from 'react'
-
-import { getMbbData, getFbbData } from '../../../services/shareService'
-
 import { AnimatedCard, SkeletonBox, SkeletonText } from '../../../animation'
 import ErrorState from '../../ErrorState'
 import { useFilterStore } from '../../../store/useFilterStore'
+
+import { useFbbData, useMbbData } from '../../../hooks/useShareData'
 
 const ShareCard = () => {
 
@@ -17,19 +14,13 @@ const ShareCard = () => {
     data: mbbData = [],
     isLoading: isLoadingMbb,
     isError: isErrorMbb,
-  } = useQuery({
-    queryKey: ["mbbData", period, source, region],
-    queryFn: () => getMbbData({period, source, region}),
-  });
+  } = useMbbData({period, source, region})
 
   const {
     data: fbbData = [],
     isLoading: isLoadingFbb,
     isError: isErrorFbb,
-  } = useQuery({
-    queryKey: ["fbbData", period, source, region],
-    queryFn: () => getFbbData({period, source, region}),
-  });
+  } = useFbbData({period, source, region})
 
   const isLoading = isLoadingMbb || isLoadingFbb;
 
