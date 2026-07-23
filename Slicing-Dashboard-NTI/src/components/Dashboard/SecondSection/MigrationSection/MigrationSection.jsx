@@ -1,7 +1,4 @@
   import SankeyChart from "../MigrationSection/SankeyChart";
-  import { useQuery } from "@tanstack/react-query";
-
-  import { getMigrationData } from "../../../../services/migrationService";
 
   import { UserRound } from "lucide-react";
   import {
@@ -14,6 +11,8 @@
 
   import { useFilterStore } from "../../../../store/useFilterStore";
 
+  import { useMigrationData } from "../../../../hooks/useMigrationData";
+
   const MigrationSection = () => {
 
     const {period, region, category, movement} = useFilterStore()
@@ -22,10 +21,7 @@
       data: migration = { nodes: [], links: [] },
       isLoading,
       isError,
-    } = useQuery({
-      queryKey: ["migrationData", period, region, category, movement],
-      queryFn: () => getMigrationData({period, region, category, movement}),
-    });
+    } = useMigrationData({period, region, category, movement})
 
     return (
       <div className="bg-white mr-2 rounded-2xl border border-slate-200 h-full flex flex-col">

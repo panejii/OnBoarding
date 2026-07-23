@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useMapData } from "../../../../hooks/useMapData";
 
 import Map from "./Mapbox";
 import MapLegend from "./MapLegend";
@@ -7,7 +7,6 @@ import ZoomControl from "./ZoomControl";
 import PopupInfo from "./PopupInfo";
 import BottomPanel from "./BottomPanel";
 
-import { getMapData } from "../../../../services/mapService";
 import { useFilterStore } from "../../../../store/useFilterStore";
 import ErrorState from "../../../ErrorState";
 
@@ -16,10 +15,7 @@ const MapSection = () => {
 
   const { period, region } = useFilterStore();
 
-  const { data, isError } = useQuery({
-    queryKey: ["mapData", period, region],
-    queryFn: () => getMapData({ period, region }),
-  });
+  const { data, isError } = useMapData({period, region})
 
   return (
     <div className="bg-white rounded-2xl ml-3 shadow-sm h-full flex flex-col">

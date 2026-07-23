@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+import { useRegionalData } from "../../../../hooks/useRegionalData"
 
 import ChurnCard from "./ChurnCard"
 import FixedBroadCard from "./FixedBroadCard"
@@ -6,7 +6,6 @@ import MobileBroadCard from "./MobileBroadCard"
 import RegionalCard from "./RegionalCard"
 import PayloadCard from "./PayloadCard"
 
-import { getRegionalData } from "../../../../services/regionalService"
 import { AnimatedCard, SkeletonBox, SkeletonText } from "../../../../animation"
 import ErrorState from "../../../ErrorState"
 
@@ -20,10 +19,7 @@ const RegionalSection = () => {
         data,
         isLoading,
         isError,
-    } = useQuery({
-        queryKey: ["regionalData", period, region],
-        queryFn: () => getRegionalData({ period, region }),
-    })
+    } = useRegionalData({period, region})
 
   return (
     <AnimatedCard
