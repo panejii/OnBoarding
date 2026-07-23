@@ -46,7 +46,6 @@ function buildShareData(rawData, { period, source, region }) {
     return {
       id: i + 1,
       provider,
-      logo: latest.logo,
       percentage: latest.value,
       growth,
       sparkline: rows.map((r) => r.value),
@@ -58,7 +57,7 @@ function buildShareData(rawData, { period, source, region }) {
 export const handlers = [
 
   http.get("/api/area-chart", async ({request}) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url)
     const period = url.searchParams.get("period") ?? "this_month"
@@ -82,7 +81,7 @@ export const handlers = [
   }),
 
   http.get("/api/competitorData", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -136,7 +135,6 @@ export const handlers = [
     const prev = filtered.at(-2) ?? latest;
 
     const nameMap = { indosat: "FMC Indosat", xl: "FMC XL Axiata" };
-    const logoMap = { indosat: "indihome", xl: "xl" }; // sesuai key yang dikenal komponen
 
     const data = competitors.map((p, i) => {
       const value = latest[p];
@@ -146,7 +144,6 @@ export const handlers = [
 
       return {
         id: i + 1,
-        logo: logoMap[p],
         provider: nameMap[p],
         percentage: value,
         value: `${isUp ? "+" : ""}${trendPercent}%`,
@@ -164,7 +161,7 @@ export const handlers = [
   }),
 
   http.get("/api/mbb-data", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -182,7 +179,7 @@ export const handlers = [
   }),
 
   http.get("/api/fbb-data", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -200,7 +197,7 @@ export const handlers = [
   }),
 
   http.get("/api/migrationData", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
 
@@ -224,7 +221,7 @@ export const handlers = [
   }),
 
   http.get("/api/regionalData", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";
@@ -239,7 +236,7 @@ export const handlers = [
   }),
 
   http.get("/api/mapData", async ({ request }) => {
-    await delay(500);
+    await delay(2500);
 
     const url = new URL(request.url);
     const period = url.searchParams.get("period") ?? "this_month";

@@ -1,18 +1,18 @@
-import indihome from '../../../assets/LogoIndosat.png'
+import indosat from '../../../assets/LogoIndosat.png'
 import xl from '../../../assets/LogoXL.png'
 
-const CompetitorSummary = ({ item }) => {
+const providerLogoMap = {
+  "FMC Indosat": indosat,
+  "FMC XL Axiata": xl,
+};
 
-  const logoMap = {
-    indihome,
-    xl,
-  };
+const CompetitorSummary = ({ item }) => {
 
   return (
     <div className="rounded-xl border border-gray-100 p-4 text-center">
 
       <img
-        src={logoMap[item.logo]}
+        src={providerLogoMap[item.provider]}
         alt={item.provider}
         className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7 mx-auto mb-2"
       />

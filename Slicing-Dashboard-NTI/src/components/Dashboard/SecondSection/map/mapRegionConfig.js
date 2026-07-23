@@ -1,5 +1,4 @@
-// Konfigurasi viewport peta (center + zoom) per level region.
-// Key HARUS sama dengan value `region` di useFilterStore (nationwide | regionalwide | citywide).
+// Konfigurasi viewport peta (center + zoom) per level region. Key HARUS sama dengan value `region` di useFilterStore (nationwide | regionalwide | citywide).
 export const MAP_REGION_CONFIG = {
   nationwide: {
     label: "Indonesia",

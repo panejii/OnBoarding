@@ -5,7 +5,7 @@ import { StaggerContainer, StaggerItem } from "../../../animation";
 
 const Hero = () => {
   return (
-    <StaggerContainer className="grid grid-cols-12" stagger={1.0}>
+    <StaggerContainer className="grid grid-cols-12" stagger={2.0}>
 
       <StaggerItem className="col-span-8 flex rounded-2xl my-2 2xl:my-3 ml-2 2xl:ml-3 gap-2 bg-white">
 

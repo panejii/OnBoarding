@@ -11,7 +11,7 @@ const statusClass = (status) => {
   return "text-green-600 bg-green-100";
 };
 
-const PopupInfo = ({ data }) => {
+const PopupInfo = ({ data,  title }) => {
   const iconClass =
     "w-2 h-2 lg:w-2.5 lg:h-2.5 xl:w-2.5 xl:h-2.5 2xl:w-[9px] 2xl:h-[9px]";
 
@@ -41,6 +41,10 @@ const PopupInfo = ({ data }) => {
       >
         {data.title}
       </h3>
+
+      <h1>
+        {title}
+      </h1>
 
       <div
         className="

@@ -8,17 +8,17 @@ import indosat from '../../../assets/LogoIndosat.png'
 import xl from '../../../assets/LogoXL.png'
 import xlhome from '../../../assets/LogoXLHome.png'
 
+const providerLogoMap = {
+  IndiHome: indihome,
+  XL: xl,
+  Indosat: indosat,
+  "XL Home": xlhome,
+  Biznet: biznet,
+  Telkomsel: telkomsel,
+};
+
 const ShareItem = ({ item }) => {
   const isPositive = item.growth > 0;
-
-  const logoMap = {
-    indihome,
-    xl,
-    indosat,
-    xlhome,
-    biznet,
-    telkomsel
-  };
 
   return (
     <div className="grid grid-cols-2 justify-between items-center border border-gray-200 rounded-xl overflow-hidden bg-white">
@@ -28,7 +28,7 @@ const ShareItem = ({ item }) => {
 
         <div className="flex items-center gap-1 xl:gap-1.5  2xl:gap-2 ">
           <img
-            src={logoMap[item.logo]}
+            src={providerLogoMap[item.provider]}
             alt={item.provider}
             className="w-2 h-2 lg:w-2.5 lg:h-2.5 xl:w-3 xl:h-3 2xl:w-5 2xl:h-5 object-contain"
           />

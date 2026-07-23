@@ -15,8 +15,7 @@ export default function Map({ onLoad }) {
 
     const { region } = useFilterStore()
 
-    // Map instance dibuat SEKALI saja. Viewport awal mengikuti region yang
-    // aktif saat mount (nilai region berikutnya ditangani oleh effect di bawah).
+    // Map instance dibuat SEKALI saja. Viewport awal mengikuti region yang aktif saat mount (nilai region berikutnya ditangani oleh effect di bawah).
     useEffect(() => {
         const { center, zoom } = getMapViewport(region)
 
@@ -39,8 +38,7 @@ export default function Map({ onLoad }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    // Saat region berubah (nationwide/regionalwide/citywide), map yang sudah
-    // ada digeser & di-zoom ke viewport region baru, bukan dibuat ulang.
+    // Saat region berubah (nationwide/regionalwide/citywide), map yang sudah ada digeser & di-zoom ke viewport region baru, bukan dibuat ulang.
     useEffect(() => {
         if (!mapRef.current) return
         const { center, zoom } = getMapViewport(region)

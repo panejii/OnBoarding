@@ -38,7 +38,8 @@ const MapSection = () => {
             ) : (
               data && (
                 <>
-                  <PopupInfo data={data.popup} />
+                  <PopupInfo data={data.popup} title="popupInfo" />
+                  <PopupInfo data={data.popup} title="2" />
                   <BottomPanel grids={data.grids} />
                 </>
               )
