@@ -1,11 +1,10 @@
+import axiosInstance from "../lib/axiosInstance";
+
 export async function getMapData({ period, region }) {
-  const params = new URLSearchParams({ period, region });
-  const response = await fetch(`/api/mapData?${params.toString()}`);
+  const response = await axiosInstance.get(`/mapData`, {
+    params: {period, region}
+  });
 
-  if (!response.ok) {
-    throw new Error("Failed to fetch map data");
-  }
-
-  const json = await response.json();
+  const json = response.data;
   return json.data;
 }

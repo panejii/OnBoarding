@@ -1,7 +1,10 @@
-export async function getRegionalData({ period, region }) {
-  const params = new URLSearchParams({ period, region });
-  const response = await fetch(`/api/regionalData?${params.toString()}`);
+import axiosInstance from "../lib/axiosInstance";
 
-  const json = await response.json();
+export async function getRegionalData({ period, region }) {
+  const response = await axiosInstance.get(`/regionalData`, {
+    params: {period,region}
+  });
+
+  const json = response.data;
   return json.data;
 }

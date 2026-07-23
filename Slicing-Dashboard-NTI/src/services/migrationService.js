@@ -1,9 +1,12 @@
+import axiosInstance from "../lib/axiosInstance"
+
 export async function getMigrationData({period, region, category, movement}) {
 
-  const params = new URLSearchParams({period,region, category, movement})
-  const response = await fetch(`/api/migrationData?${params.toString()}`)
+  const response = await axiosInstance.get(`/migrationData`, {
+    params: {period,region,category,movement}
+  })
 
-  const result = await response.json()
+  const result = response.data
 
   return result.data
 }
