@@ -1,9 +1,12 @@
+import axiosInstance from "../lib/axiosInstance";
+
 export async function getAreaChart({period, region}) {
   
-  const params = new URLSearchParams({period,region})
-  const response = await fetch(`/api/area-chart?${params.toString()}`)
+  const response = await axiosInstance.get("/area-chart", {
+    params: {period,region},
+  })
 
-  const json = await response.json()
+  const json = response.data
 
   return json.data.category.map((date, i) => ({
     date,

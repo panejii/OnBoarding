@@ -1,11 +1,13 @@
+import axios from "axios";
+import axiosInstance from "../lib/axiosInstance";
+
 export async function getCompetitor({ period, region }) {
-  const params = new URLSearchParams({ period, region });
-  const response = await fetch(`/api/competitorData?${params.toString()}`);
+  
+  const response = await axiosInstance.get("/competitorData", {
+    params: {period,region}
+  })
 
-  if (!response.ok) throw new Error("Failed to fetch competitor data");
-
-  const json = await response.json();
-  const { category, series } = json.data;
+  const { category, series } = response.data.data;
 
   return category.map((date, i) => ({
     date,
@@ -16,9 +18,9 @@ export async function getCompetitor({ period, region }) {
 }
 
 export async function getCompetitorSummary({ period, region }) {
-  const params = new URLSearchParams({ period, region });
-  const response = await fetch(`/api/competitorSummaryData?${params.toString()}`);
+  const response = await axiosInstance.get("/competitorSummaryData", {
+    params: { period, region },
+  });
 
-  const json = await response.json();
-  return json.data;
+  return response.data.data;
 }

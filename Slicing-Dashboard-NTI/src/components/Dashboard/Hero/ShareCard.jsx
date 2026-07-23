@@ -3,8 +3,8 @@ import ShareColumn from './ShareColumn'
 import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
 
-import { getMbbData } from '../../../services/mbbService'
-import { getFbbData } from '../../../services/fbbService'
+import { getMbbData, getFbbData } from '../../../services/shareService'
+
 import { AnimatedCard, SkeletonBox, SkeletonText } from '../../../animation'
 import ErrorState from '../../ErrorState'
 import { useFilterStore } from '../../../store/useFilterStore'
